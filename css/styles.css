@@ -1,0 +1,11 @@
+.jumbotron {
+    background-image: url('../images/computer-screen.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-blend-mode: darken;
+    /* background-color: rgb(99, 99, 99); */
+  }
+
+  img[src="images/bert-witzel.jpg"]{
+      width: 25%;
+  }
