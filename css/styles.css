@@ -9,15 +9,11 @@ img[src="images/bert-witzel.jpg"]{
     width: 100%;
 }
 
-.city-website {
-    background: url('../images/portfolio/city-website.jpg') no-repeat top/cover;
-    height: 18rem;
-    /* background-attachment: scroll; */
+.img-portfolio {
+    height: 14rem;
 }
 
-
-
-  /* media queries */
+/* media queries */
 
   @media (max-width: 992px){
       .p-about {
