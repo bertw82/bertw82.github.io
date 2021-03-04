@@ -3,9 +3,30 @@
     background-size: cover;
     background-position: top center;
     background-blend-mode: darken;
-    /* background-color: rgb(99, 99, 99); */
   }
 
-  img[src="images/bert-witzel.jpg"]{
-      width: 25%;
+img[src="images/bert-witzel.jpg"]{
+    width: 100%;
+}
+
+.city-website {
+    background: url('../images/portfolio/city-website.jpg') no-repeat top/cover;
+    height: 18rem;
+    /* background-attachment: scroll; */
+}
+
+
+
+  /* media queries */
+
+  @media (max-width: 992px){
+      .p-about {
+          margin-top: 1rem;
+      }
+  }
+  @media (min-width: 992px){
+    .img-about,
+    .p-about {
+        width: 50%;
+    }
   }
