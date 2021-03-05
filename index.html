@@ -15,12 +15,15 @@
         <!-- nav bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <div class="container">
-            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">Bert Witzel</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">About</a>
                 </li>
@@ -28,10 +31,16 @@
                   <a class="nav-link" href="#">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Skills</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="#" >Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Theme
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Light</a>
+                    <a class="dropdown-item" href="#">Dark</a>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -47,7 +56,6 @@
           </div>
         </div>
         <!-- /jumbotron -->
-
       </header>
   
       <main>
@@ -81,6 +89,7 @@
                   <h5 class="card-title">Tourism Website</h5>
                   <p class="card-text">Multi-page responsive website created with HTML, Sass and JavaScript. Includes a Lightbox photo gallery, CSS accordion menu, and HTML table. Images are all original and taken by me.</p>
                   <a href="https://bertw82.github.io/city-website/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                  <a href="https://bertw82.github.io/city-website/" class="btn btn-success mt-2" target="_blank">View Code</a>
                 </div>
               </div>
             </div>
@@ -94,6 +103,7 @@
                   <h5 class="card-title">FeatherLITE App</h5>
                   <p class="card-text">Interactive note-taking app created with HTML, Sass and JavaScript for mobile and tablet screen sizes. Notes can be created by choosing color labels and inputting information. Notes can also be deleted from the App.</p>
                   <a href="https://bertw82.github.io/FeatherLITE-app/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                  <a href="https://bertw82.github.io/city-website/" class="btn btn-success mt-2" target="_blank">View Code</a>
                 </div>
               </div>
             </div>
@@ -107,6 +117,7 @@
                   <h5 class="card-title">API Employee Directory</h5>
                   <p class="card-text">Responsive, interactive Employee Directory using Fetch API. There is earch functionality to search for employee names. Click on an employee and a modal window opens. Move back and forth between employees in the modal window.</p>
                   <a href="https://bertw82.github.io/techdegree-project-8/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                  <a href="https://bertw82.github.io/city-website/" class="btn btn-success mt-2" target="_blank">View Code</a>
                 </div>
               </div>
             </div>
@@ -114,47 +125,58 @@
         </div>
         <!-- /Portfolio section -->
   
-        <!-- Skills section -->
-        
-        <div class="container">
-          <h2 class="text-center display-4 text-muted my-4">Skills</h2>
-          <div class="row row-cols-1 row-cols-md-2">
-            <div class="col mb-4">
-              <div class="card h-100">
-                <img src="images/svg/html.svg" class="card-img-top mx-auto my-4" alt="HTML5 icon">
-                <h5 class="card-footer mb-0 mt-auto">HTML</h5>
-              </div>
+        <!-- Contact section -->
+        <div class="container mb-4">
+          <h2 class="text-center display-4 text-muted mb-4">Contact</h2>
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
             </div>
-            <div class="col mb-4">
-              <div class="card h-100">
-                <img src="images/svg/css.svg" class="card-img-top mx-auto my-4" alt="CSS icon">
-                <h5 class="card-footer mb-0 mt-auto">CSS</h5>
-              </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
-            <div class="col mb-4">
-              <div class="card h-100">
-                <img src="images/svg/sass.svg" class="card-img-top mx-auto my-4" alt="Sass icon">
-                <h5 class="card-footer mb-0 mt-auto">Sass</h5>
-              </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Phone</label>
+              <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="###-###-####">
             </div>
-            <div class="col mb-4">
-              <div class="card h-100">
-                <img src="images/svg/js.svg" class="card-img-top mx-auto my-4" alt="JavaScript icon">
-                <h5 class="card-footer mb-0 mt-auto">JavaScript</h5>
-              </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Comments</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <!-- /Contact section -->
+        <!-- Quote section -->
+        <div class="card">
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>"To me programming is more than an important practical art. It is also a gigantic undertaking in the foundations of knowledge."</p>
+              <footer class="blockquote-footer">Grace Hopper</footer>
+            </blockquote>
           </div>
         </div>
-        <!-- /Skills section -->
-  
-        <!-- Contact section -->
-  
-        <!-- /Contact section -->
+        <!-- /Quote section -->
       </main>
       
       <footer>
         <!-- footer nav -->
-  
+        <nav class="navbar navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="images/svg/linkedin.svg" width="30" height="30" alt="">
+            </a>
+            <a class="navbar-brand" href="#">
+              <img src="images/svg/github.svg" width="30" height="30" alt="">
+            </a>
+            <div class="ml-auto text-md-right">
+              <small>&copy; 2021 Bert Witzel</small>
+            </div>
+          </div>
+        </nav>
+
         <!-- /footer nav -->
       </footer>
     <!-- Optional JavaScript; choose one of the two! -->
