@@ -8,12 +8,19 @@
 img[src="images/bert-witzel.jpg"]{
     width: 100%;
 }
-img[src*="html"]{
-    width: 14rem;
+img[src$="html.svg"]{
+    width: 12rem;
 }
 
-img[src*="css"]{
-    width: 10rem;
+img[src$="css.svg"]{
+    width: 8.5rem;
+}
+
+img[src$="sass.svg"]{
+    width: 12rem;
+}
+img[src$="js.svg"] {
+    width: 9rem;
 }
 
 .img-portfolio {
