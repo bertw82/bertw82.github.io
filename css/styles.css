@@ -9,12 +9,8 @@ img[src="images/bert-witzel.jpg"]{
     width: 100%;
 }
 
-img[src="images/svg/github.svg"]{
-    border-radius: 50%;
-}
-
 .img-portfolio {
-    height: 14rem;
+    height: 16rem;
 }
 blockquote p {
     font-family: 'Courgette', cursive;
