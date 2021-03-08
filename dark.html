@@ -12,10 +12,10 @@
     <link href="css/styles.css" rel="stylesheet">
     <title>Bert Witzel | Web Developer</title>
   </head>
-  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100" class="bg-dark"> <!--bg dark-->
     <header>
         <!-- nav bar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top"> <!--navbar-dark-->
           <div class="container">
             <a class="navbar-brand" href="#">Bert Witzel</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,7 @@
         <!-- /nav bar -->
   
         <!-- jumbotron -->
-        <div class="jumbotron jumbotron-fluid bg-info text-white"> <!--image attribution: Negative Space, Pexels, CC0, via Wikimedia Commons-->
+        <div class="jumbotron jumbotron-fluid bg-success text-white"> <!--bg-dark-->
           <div class="container text-sm-center pt-5">
             <h1 class="display-2">Bert Witzel</h1>
             <p class="lead">Web Developer</p>
@@ -51,19 +51,19 @@
         <!-- /jumbotron -->
       </header>
   
-      <main>
+      <main >
         <!-- About section -->
         <div class="container">
-          <h2 class="text-center display-4 text-muted my-5"  id="about">About</h2>
+          <h2 class="text-center display-4 text-light my-5" id="about">About</h2> <!--text dark-->
           <!-- image of Bert Witzel -->
           <div class="d-lg-flex justify-content-between">
             <div class="img-about">
               <img src="images/bert-witzel.jpg" alt="portrait of Bert Witzel">
             </div>
-            <p class="p-about mt-4 mt-lg-0 ml-lg-5">
+            <p class="p-about mt-4 mt-lg-0 ml-lg-5 text-light">
               Hello! I am a freelance web developer who loves to create fantastic looking websites for my clients. I am very interested in website design and functionality, and I always strive for a clean and attractive website design.<br><br> 
               
-              As a graduate of <a href="https://teamtreehouse.com" style="text-decoration: none;" target="_blank">Treehouse</a>, I am well-versed in HTML, CSS, Sass, and JavaScript, and I use all of these technologies to fulfill my clients vision. As a lifetime learner and problem solver, I bring my problem solving skills to tackle any project given to me. I look forward to working with you to help realize your vision for a website!
+              As a graduate of <a href="https://teamtreehouse.com" class="text-success" style="text-decoration: none;" target="_blank">Treehouse</a>, I am well-versed in HTML, CSS, Sass, and JavaScript, and I use all of these technologies to fulfill my clients vision. As a lifetime learner and problem solver, I bring my problem solving skills to tackle any project given to me. I look forward to working with you to help realize your vision for a website!
             </p>
           <p class="text-dark">this is dark text</p>
           <p class="text-body">this is body text</p>
@@ -76,18 +76,18 @@
   
         <!-- Portfolio section -->
         <div class="container">
-          <h2 class="text-center display-4 text-muted my-5" id="portfolio">Portfolio</h2>
+          <h2 class="text-center display-4 text-light my-5" id="portfolio">Portfolio</h2> <!--text dark-->
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
             <div class="col mb-4">
-              <div class="card  h-100 mx-auto">
+              <div class="card h-100 mx-auto bg-dark border-primary"><!--bg border dark-->
                 <div class="img-portfolio overflow-auto">
                   <img class="w-100" src="images/portfolio/dashboard-app.jpg" alt="dashboard app project">
                 </div>
                 <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Dashboard App</h5>
-                  <p class="card-text">Responsive webpage featuring svg manipulation, charts, CSS grid, and use of local storage.</p>
-                  <p class="card-text">Technologies used: HTML, Sass, JavaScript</p>
+                  <h5 class="card-title text-warning">Dashboard App</h5><!--text dark-->
+                  <p class="card-text text-warning">Responsive webpage featuring svg manipulation, charts, CSS grid, and use of local storage.</p><!--text dark-->
+                  <p class="card-text text-warning">Technologies used: HTML, Sass, JavaScript</p><!--text dark-->
                   <a href="https://bertw82.github.io/techdegree-project-7/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
                   <a href="https://github.com/bertw82/techdegree-project-7" class="btn btn-success mt-2" target="_blank">View Code</a>
                 </div>
@@ -209,23 +209,23 @@
   
         <!-- Contact section -->
         <div class="container mb-4">
-          <h2 class="text-center display-4 text-muted my-5" id="contact">Contact</h2>
+          <h2 class="text-center display-4 text-light my-5" id="contact">Contact</h2><!--text dark-->
           <div class="col-lg-8 mx-auto">
             <form>
               <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name" class="text-light">Name</label><!--text dark-->
                 <input type="text" class="form-control" id="name" placeholder="Name">
               </div>
               <div class="form-group">
-                <label for="email">Email address</label>
+                <label for="email" class="text-light">Email address</label><!--text dark-->
                 <input type="email" class="form-control" id="email" placeholder="name@example.com">
               </div>
               <div class="form-group">
-                <label for="phone">Phone</label>
+                <label for="phone" class="text-light">Phone</label><!--text dark-->
                 <input type="tel" class="form-control" id="phone" placeholder="###-###-####">
               </div>
               <div class="form-group">
-                <label for="comments">Comments</label>
+                <label for="comments" class="text-light">Comments</label><!--text dark-->
                 <textarea class="form-control" id="comments" rows="3"></textarea>
               </div>
               <button id="form-button" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Submit</button>
@@ -257,11 +257,11 @@
         <!-- /Modal section -->
 
         <!-- Quote section -->
-        <div class="card mt-5">
+        <div class="card mt-5 bg-dark border-light"><!--bg border dark-->
           <div class="card-body">
-            <blockquote class="blockquote container  mb-0">
+            <blockquote class="blockquote container text-warning mb-0"><!--text dark-->
               <p>"To me programming is more than an important practical art. It is also a gigantic undertaking in the foundations of knowledge."</p>
-              <footer class="blockquote-footer">Grace Hopper</footer>
+              <footer class="blockquote-footer text-warning">Grace Hopper</footer><!--text dark-->
             </blockquote>
           </div>
         </div>
@@ -270,7 +270,7 @@
       
       <footer>
         <!-- footer nav -->
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light bg-secondary"><!--bg dark-->
           <div class="container">
             <a class="navbar-brand" target="_blank" href="https://www.linkedin.com/in/bert-witzel-831b021b0/">
               <img src="images/svg/linkedin.svg" width="30" height="30" alt="LinkedIn icon">
@@ -281,7 +281,7 @@
             <a style="cursor: pointer;" data-container="body" data-toggle="popover" data-placement="top" data-content="This website built with Bootstrap">
               <img src="images/svg/bootstrap.svg" width="30" height="30" alt="Bootstrap icon">
             </a>
-            <div class="ml-auto text-md-right">
+            <div class="ml-auto text-light text-md-right"><!--text dark-->
               <small>&copy; 2021 Bert Witzel</small>
             </div>
           </div>
