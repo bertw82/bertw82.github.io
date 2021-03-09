@@ -15,7 +15,47 @@ img[src="images/bert-witzel.jpg"]{
 blockquote p {
     font-family: 'Courgette', cursive;
 }
+.light-border{
+    border: 1px solid rgba(0,0,0,.125);
+}
 
+/* main photo */
+.photo {
+	position: relative;
+	line-height: 0;
+	overflow: hidden;
+}
+
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+    opacity: 0;
+	transition: opacity .5s;
+	display: flex;
+	 flex-direction: column;
+     flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;  
+	background: rgba(0,0,0, .5);
+}
+.photo-overlay p {
+	margin-bottom: 2em;
+}
+.photo-overlay:hover {
+	opacity: 1;
+}
+.photo img {
+	transform-origin: 0 0;
+    transition: transform .4s ease-out;
+}
+
+.photo:hover img {
+	transform: scale(1.1);
+}
 /* media queries */
 
   @media (max-width: 992px){

@@ -15,7 +15,7 @@
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
     <header>
         <!-- nav bar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom border-muted">
           <div class="container">
             <a class="navbar-brand" href="#">Bert Witzel</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,20 +56,30 @@
         <div class="container">
           <h2 class="text-center display-4 text-muted my-5"  id="about">About</h2>
           <!-- image of Bert Witzel -->
-          <div class="d-lg-flex justify-content-between">
-            <div class="img-about">
+          <div class="d-lg-flex align-items-center">
+            <!-- <div class="photo-container"> -->
+              <div class="photo img-about">
+                <img src="images/bert-witzel.jpg" alt="portrait of Bert Witzel">
+                <div class="photo-overlay">
+                  <p class="lead">Learn about my life as a musician</p>
+                  <a href="#" class="btn btn-primary">Visit Website</a>
+                </div>
+              </div>
+             
+            <!-- </div> -->
+            <!-- <div class="img-about">
               <img src="images/bert-witzel.jpg" alt="portrait of Bert Witzel">
-            </div>
-            <p class="p-about mt-4 mt-lg-0 ml-lg-5">
+            </div> -->
+            <p class="p-about lead mt-4 mt-lg-0 ml-lg-5">
               Hello! I am a freelance web developer who loves to create fantastic looking websites for my clients. I am very interested in website design and functionality, and I always strive for a clean and attractive website design.<br><br> 
               
               As a graduate of <a href="https://teamtreehouse.com" style="text-decoration: none;" target="_blank">Treehouse</a>, I am well-versed in HTML, CSS, Sass, and JavaScript, and I use all of these technologies to fulfill my clients vision. As a lifetime learner and problem solver, I bring my problem solving skills to tackle any project given to me. I look forward to working with you to help realize your vision for a website!
             </p>
-          <p class="text-dark">this is dark text</p>
+          <!-- <p class="text-dark">this is dark text</p>
           <p class="text-body">this is body text</p>
           <p class="text-black-50">this is black 50 text</p>
           <p class="text-secondary">this is secondary text</p>
-          <p class="text-muted">this is muted text</p>
+          <p class="text-muted">this is muted text</p> -->
           </div>
         </div>
         <!-- /About section -->
@@ -80,7 +90,7 @@
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
             <div class="col mb-4">
-              <div class="card  h-100 mx-auto">
+              <div class="card  h-100 mx-auto light-border">
                 <div class="img-portfolio overflow-auto">
                   <img class="w-100" src="images/portfolio/dashboard-app.jpg" alt="dashboard app project">
                 </div>
@@ -95,7 +105,7 @@
             </div>
 
             <div class="col mb-4">
-              <div class="card h-100 mx-auto">
+              <div class="card h-100 mx-auto light-border">
                 <div class="img-portfolio overflow-auto">
                   <img class="w-100" src="images/portfolio/employee-directory.jpg" alt="employee directory API project">
                 </div>
@@ -110,7 +120,7 @@
             </div>
 
             <div class="col mb-4">
-              <div class="card  h-100 mx-auto">
+              <div class="card  h-100 mx-auto light-border">
                 <div class="img-portfolio overflow-auto">
                   <img class="w-100" src="images/portfolio/city-website.jpg" alt="city website project">
                 </div>
@@ -125,7 +135,7 @@
             </div>
 
             <div class="col mb-4">
-              <div class="card h-100 mx-auto">
+              <div class="card h-100 mx-auto light-border">
                 <div class="img-portfolio overflow-auto">
                   <img class="w-100" src="images/portfolio/featherlite-app.jpg" alt="featherlite app project">
                 </div>
@@ -140,7 +150,7 @@
             </div>
             
             <div class="col mb-4">
-              <div class="card h-100 mx-auto">
+              <div class="card h-100 mx-auto light-border">
                 <div class="img-portfolio overflow-auto">
                   <img class="w-100" src="images/portfolio/wheel-of-success.jpg" alt="wheel of success project">
                 </div>
@@ -155,8 +165,8 @@
               </div>
             </div>
 
-            <div class="col mb-4 d-none d-md-block">
-              <div class="card h-100 mx-auto">
+            <div class="col mb-4 d-none d-md-block ">
+              <div class="card h-100 mx-auto light-border ">
                 <div class="img-portfolio overflow-auto">
                   <img class="w-100" src="images/portfolio/portfolio-project.jpg" alt="portfolio project">
                 </div>
@@ -171,8 +181,8 @@
               </div>
             </div>
 
-            <div class="col mb-4 d-none d-md-block">
-              <div class="card h-100 mx-auto">
+            <div class="col mb-4 d-none d-md-block ">
+              <div class="card h-100 mx-auto light-border">
                 <div class="img-portfolio overflow-auto">
                   <img class="w-100" src="images/portfolio/form.jpg" alt="form project">
                 </div>
@@ -188,7 +198,7 @@
             </div>
 
             <div class="col mb-4">
-              <div class="card h-100 mx-auto">
+              <div class="card h-100 mx-auto light-border">
                 <div class="img-portfolio overflow-auto">
                   <img class="w-100" src="images/portfolio/countdown-timer.jpg" alt="form project">
                 </div>
@@ -213,19 +223,19 @@
           <div class="col-lg-8 mx-auto">
             <form>
               <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name text-body">Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Name">
               </div>
               <div class="form-group">
-                <label for="email">Email address</label>
+                <label for="email text-body">Email address</label>
                 <input type="email" class="form-control" id="email" placeholder="name@example.com">
               </div>
               <div class="form-group">
-                <label for="phone">Phone</label>
+                <label for="phone text-body">Phone</label>
                 <input type="tel" class="form-control" id="phone" placeholder="###-###-####">
               </div>
               <div class="form-group">
-                <label for="comments">Comments</label>
+                <label for="comments text-body">Comments</label>
                 <textarea class="form-control" id="comments" rows="3"></textarea>
               </div>
               <button id="form-button" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Submit</button>
@@ -257,9 +267,9 @@
         <!-- /Modal section -->
 
         <!-- Quote section -->
-        <div class="card mt-5">
+        <div class="card my-5 col-lg-6 mx-auto">
           <div class="card-body">
-            <blockquote class="blockquote container  mb-0">
+            <blockquote class="blockquote container text-dark text-center mb-0">
               <p>"To me programming is more than an important practical art. It is also a gigantic undertaking in the foundations of knowledge."</p>
               <footer class="blockquote-footer">Grace Hopper</footer>
             </blockquote>
@@ -281,7 +291,7 @@
             <a style="cursor: pointer;" data-container="body" data-toggle="popover" data-placement="top" data-content="This website built with Bootstrap">
               <img src="images/svg/bootstrap.svg" width="30" height="30" alt="Bootstrap icon">
             </a>
-            <div class="ml-auto text-md-right">
+            <div class="ml-auto text-md-right text-dark">
               <small>&copy; 2021 Bert Witzel</small>
             </div>
           </div>
