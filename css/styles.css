@@ -1,3 +1,27 @@
+@keyframes rotate {
+    25% {
+        transform: rotate(90deg) scale(1.2);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.4);
+
+    }
+    75% {
+        transform: rotate(270deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+ 
+    }
+}
+.social-image {
+    width: 30px;
+    height: 30px;
+}
+.social-image:hover {
+    animation: rotate .3s;
+}
+
 .jumbotron {
     background-image: url('../images/computer-screen.jpg');
     background-size: cover;
@@ -15,9 +39,40 @@ img[src="images/bert-witzel.jpg"]{
 blockquote p {
     font-family: 'Courgette', cursive;
 }
-.light-border{
-    border: 1px solid rgba(0,0,0,.125);
+
+.tech-svg {
+    height: 50px;
+    width: 50px;
 }
+.form-border {
+    border: 4px solid;
+    border-radius: 10px;
+}
+
+/* quote styles from Jorge Epunan https://codepen.io/juanbrujo/pen/BIvKs*/
+blockquote:before {
+    content: '\201C';
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-family: Arial, sans-serif;
+    font-size: 82px;
+    font-style: normal;
+    margin-left: 5px;
+  }
+  blockquote:after {
+    content: '\201C';
+    position: absolute;
+    bottom: -35px;
+    right: 0;
+    font-family: Arial, sans-serif;
+    font-size: 82px;
+    font-style: normal;
+    margin-right: 10px;
+  }
+ .footer {
+      font-size: 1rem;
+  } 
 
 /* main photo */
 .photo {
