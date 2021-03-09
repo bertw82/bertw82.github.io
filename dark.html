@@ -12,10 +12,10 @@
     <link href="css/styles.css" rel="stylesheet">
     <title>Bert Witzel | Web Developer</title>
   </head>
-  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100" class="bg-dark"> <!--bg dark-->
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100" style="background-color: black;"> <!--bg dark-->
     <header>
         <!-- nav bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top"> <!--navbar-dark-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary fixed-top"> <!--navbar-dark-->
           <div class="container">
             <a class="navbar-brand" href="#">Bert Witzel</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,7 @@
         <!-- /nav bar -->
   
         <!-- jumbotron -->
-        <div class="jumbotron jumbotron-fluid bg-success text-white"> <!--bg-dark-->
+        <div class="jumbotron jumbotron-fluid bg-primary text-white"> <!--bg-dark-->
           <div class="container text-sm-center pt-5">
             <h1 class="display-2">Bert Witzel</h1>
             <p class="lead">Web Developer</p>
@@ -84,12 +84,12 @@
                 <div class="img-portfolio overflow-auto">
                   <img class="w-100" src="images/portfolio/dashboard-app.jpg" alt="dashboard app project">
                 </div>
-                <div class="card-body d-flex flex-column">
+                <div class="card-body d-flex flex-column border-top border-primary"><!--bg border dark-->
                   <h5 class="card-title text-warning">Dashboard App</h5><!--text dark-->
                   <p class="card-text text-warning">Responsive webpage featuring svg manipulation, charts, CSS grid, and use of local storage.</p><!--text dark-->
                   <p class="card-text text-warning">Technologies used: HTML, Sass, JavaScript</p><!--text dark-->
-                  <a href="https://bertw82.github.io/techdegree-project-7/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/techdegree-project-7" class="btn btn-success mt-2" target="_blank">View Code</a>
+                  <a href="https://bertw82.github.io/techdegree-project-7/" class="btn btn-danger mt-auto" target="_blank">View Project</a><!--button dark-->
+                  <a href="https://github.com/bertw82/techdegree-project-7" class="btn btn-info mt-2" target="_blank">View Code</a><!--button dark-->
                 </div>
               </div>
             </div>
@@ -211,7 +211,7 @@
         <div class="container mb-4">
           <h2 class="text-center display-4 text-light my-5" id="contact">Contact</h2><!--text dark-->
           <div class="col-lg-8 mx-auto">
-            <form>
+            <form style="border: 4px solid" class="border-primary">
               <div class="form-group">
                 <label for="name" class="text-light">Name</label><!--text dark-->
                 <input type="text" class="form-control" id="name" placeholder="Name">
@@ -270,13 +270,13 @@
       
       <footer>
         <!-- footer nav -->
-        <nav class="navbar navbar-light bg-secondary"><!--bg dark-->
+        <nav class="navbar navbar-light bg-dark border-top border-dark"><!--bg dark-->
           <div class="container">
             <a class="navbar-brand" target="_blank" href="https://www.linkedin.com/in/bert-witzel-831b021b0/">
               <img src="images/svg/linkedin.svg" width="30" height="30" alt="LinkedIn icon">
             </a>
             <a class="navbar-brand" target="_blank" href="https://github.com/bertw82">
-              <img src="images/svg/github.svg" width="30" height="30" alt="GitHub icon">
+              <img src="images/svg/github.svg" class="bg-light" style="border-radius: 50%;" width="30" height="30" alt="GitHub icon">
             </a>
             <a style="cursor: pointer;" data-container="body" data-toggle="popover" data-placement="top" data-content="This website built with Bootstrap">
               <img src="images/svg/bootstrap.svg" width="30" height="30" alt="Bootstrap icon">

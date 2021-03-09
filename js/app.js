@@ -31,6 +31,27 @@ button.addEventListener('click', (e) => {
     }
 });
 
+// dark theme JS
+const darkThemeButton = document.getElementById('darkTheme');
+
+darkThemeButton.addEventListener('click', () => {
+    // change body color
+    const body = document.querySelector('body');
+    body.style.backgroundColor = "#0d1117";
+    body.classList.remove('bg-white');
+    // change nav styles
+    const nav = document.getElementById('nav');
+    nav.classList.add('navbar-dark', 'bg-dark', 'border-secondary');
+    nav.classList.remove('navbar-light', 'bg-light', 'border-muted');
+    // change footer nav styles
+    const footerNav = document.getElementById('footerNav');
+    footerNav.classList.add('bg-dark', 'border-dark');
+    footerNav.classList.remove('bg-light', 'border-muted');
+    const footerText = document.querySelector('small');
+    footerText.parentNode.classList.add('text-light');
+    footerText.parentNode.classList.remove('text-dark');
+});
+
 
 
   
