@@ -14,6 +14,9 @@
  
     }
 }
+
+/* Images */
+
 .social-image {
     width: 30px;
     height: 30px;
@@ -23,10 +26,11 @@
 }
 
 .jumbotron {
-    background-image: url('../images/computer-screen.jpg');
+    background-image: url('../images/coding.jpg'); 
+    /* Photo by <a href="https://unsplash.com/@mitchel3uo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mitchell Luo</a> on <a href="/s/photos/code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
     background-size: cover;
     background-position: top center;
-    background-blend-mode: darken;
   }
 
 img[src="images/bert-witzel.jpg"]{
@@ -41,45 +45,9 @@ img[src="images/bert-witzel.jpg"]{
     height: 50px;
     width: 50px;
 }
-.form-border {
-    border: 4px solid;
-    border-radius: 10px;
-}
-
-.cursor {
-    cursor: pointer;
-}
-
-/* quote styles from Jorge Epunan https://codepen.io/juanbrujo/pen/BIvKs*/
-blockquote p {
-    font-family: 'Courgette', cursive;
-}
-
-blockquote:before {
-    content: '\201C';
-    position: absolute;
-    top: -30px;
-    left: 0;
-    font-family: Arial, sans-serif;
-    font-size: 82px;
-    font-style: normal;
-    margin-left: 5px;
-  }
-  blockquote:after {
-    content: '\201C';
-    position: absolute;
-    bottom: -35px;
-    right: 0;
-    font-family: Arial, sans-serif;
-    font-size: 82px;
-    font-style: normal;
-    margin-right: 10px;
-  }
- .footer {
-      font-size: 1rem;
-  } 
 
 /* main photo */
+
 .photo {
 	position: relative;
 	line-height: 0;
@@ -116,6 +84,51 @@ blockquote:before {
 .photo:hover img {
 	transform: scale(1.1);
 }
+
+/* form styles */
+
+.form-border {
+    border: 4px solid;
+    border-radius: 10px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* button styles */
+
+
+/* quote styles from Jorge Epunan https://codepen.io/juanbrujo/pen/BIvKs*/
+
+blockquote p {
+    font-family: 'Courgette', cursive;
+}
+
+blockquote:before {
+    content: '\201C';
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-family: Arial, sans-serif;
+    font-size: 82px;
+    font-style: normal;
+    margin-left: 5px;
+  }
+  blockquote:after {
+    content: '\201C';
+    position: absolute;
+    bottom: -35px;
+    right: 0;
+    font-family: Arial, sans-serif;
+    font-size: 82px;
+    font-style: normal;
+    margin-right: 10px;
+  }
+ .footer {
+      font-size: 1rem;
+  } 
+
 /* media queries */
 
   @media (max-width: 992px){

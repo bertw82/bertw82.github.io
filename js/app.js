@@ -43,13 +43,14 @@ darkThemeButton.addEventListener('click', () => {
     const nav = document.getElementById('nav');
     nav.classList.add('navbar-dark', 'bg-dark', 'border-secondary');
     nav.classList.remove('navbar-light', 'bg-light', 'border-muted');
+   
     // change jumbotron styles
-    const jumbotron = document.querySelector('.jumbotron');
-    jumbotron.classList.add('bg-success');
-    jumbotron.classList.remove('bg-info');
+    // const jumbotron = document.querySelector('.jumbotron');
+    // jumbotron.classList.add('bg-success');
+    // jumbotron.classList.remove('bg-info');
     // change footer nav styles
     const footerNav = document.getElementById('footerNav');
-    footerNav.classList.add('bg-dark', 'border-dark');
+    footerNav.classList.add('bg-dark', 'border-secondary');
     footerNav.classList.remove('bg-light', 'border-muted');
     const footerText = document.querySelector('small');
     footerText.parentNode.classList.add('text-light');
@@ -88,6 +89,7 @@ darkThemeButton.addEventListener('click', () => {
         cardText[i].classList.add('text-light');
         // cardTitle[i].classList.remove('text-body');
     }
+    // button styles
     const btnProject = document.querySelectorAll('.btn-project');
     for (let i = 0; i < btnProject.length; i++) {
         btnProject[i].classList.add('btn-danger');
@@ -98,6 +100,22 @@ darkThemeButton.addEventListener('click', () => {
         btnCode[i].classList.add('btn-info');
         btnCode[i].classList.remove('btn-success');
     }
+    // form styles
+    const form = document.querySelector('form');
+    form.classList.add('bg-secondary', 'border-primary');
+    form.classList.remove('bg-light', 'border-info');
+
+    const formButton = document.getElementById('form-button');
+    formButton.classList.add('btn-primary');
+    formButton.classList.remove('btn-info');
+    // quote styles
+    const quote = document.querySelector('blockquote');
+    quote.classList.add('text-warning');
+    quote.classList.remove('text-dark');
+
+    const quoteName = document.querySelector('.blockquote-footer');
+    quoteName.classList.add('text-warning');
+    quoteName.classList.remove('text-muted');
 });
 
 
