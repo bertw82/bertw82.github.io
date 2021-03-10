@@ -36,9 +36,6 @@ img[src="images/bert-witzel.jpg"]{
 .img-portfolio {
     height: 16rem;
 }
-blockquote p {
-    font-family: 'Courgette', cursive;
-}
 
 .tech-svg {
     height: 50px;
@@ -49,7 +46,15 @@ blockquote p {
     border-radius: 10px;
 }
 
+.cursor {
+    cursor: pointer;
+}
+
 /* quote styles from Jorge Epunan https://codepen.io/juanbrujo/pen/BIvKs*/
+blockquote p {
+    font-family: 'Courgette', cursive;
+}
+
 blockquote:before {
     content: '\201C';
     position: absolute;
