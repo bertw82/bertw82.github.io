@@ -1,3 +1,5 @@
+/* icon animation */
+
 @keyframes rotate {
     25% {
         transform: rotate(90deg) scale(1.2);
@@ -26,9 +28,7 @@
 }
 
 .jumbotron {
-    background-image: url('../images/coding.jpg'); 
-    /* Photo by <a href="https://unsplash.com/@mitchel3uo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mitchell Luo</a> on <a href="/s/photos/code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-   */
+    background-image: url('../images/coding.jpg'); /* Photo by Mitchell Luo from Unsplash */
     background-size: cover;
     background-position: top center;
   }
@@ -96,8 +96,11 @@ img[src="images/bert-witzel.jpg"]{
     cursor: pointer;
 }
 
-/* button styles */
+/* body background color */
 
+.body-background {
+    background-color: #0d1117; 
+}
 
 /* quote styles from Jorge Epunan https://codepen.io/juanbrujo/pen/BIvKs*/
 
