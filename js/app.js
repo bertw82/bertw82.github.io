@@ -1,16 +1,28 @@
 // enable Bootstrap popover
 $(function () {
     $('[data-toggle="popover"]').popover()
-  })
+  });
   
 $('.popover-dismiss').popover({
     trigger: 'focus'
-  })
+  });
 
 //   initialize toast
-$('.toast').toast('show')
+$('.toast').toast('show');
 
-// form submission
+const toastDate = document.querySelector('.mr-auto');
+function getDate() {
+    const today = new Date();
+    const day = today.getDate();
+    const month = today.getMonth();
+    const year = today.getFullYear();
+    const monthsLong = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const monthName = monthsLong[month];
+    toastDate.textContent = `${monthName} ${day}, ${year}`;
+}
+getDate();
+
+// form submission functionality
 const button = document.getElementById('form-button');
 button.addEventListener('click', (e) => {
     const name = document.getElementById('name');
