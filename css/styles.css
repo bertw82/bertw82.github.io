@@ -28,12 +28,12 @@
 }
 
 .jumbotron {
-    background-image: url('../images/coding.jpg'); /* Photo by Mitchell Luo from Unsplash */
+    background-image: url('../images/coding-2.jpg'); /* Photo by Mitchell Luo from Unsplash */
     background-size: cover;
     background-position: top center;
   }
 
-img[src="images/bert-witzel.jpg"]{
+img[src="images/rsz_bert-witzel.jpg"]{
     width: 100%;
 }
 

@@ -13,6 +13,7 @@
     <title>Bert Witzel | Web Developer</title>
   </head>
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100" class="bg-white">
+    
     <header>
 
         <!-- nav bar -->
@@ -75,15 +76,17 @@
           </div>
         </div>
         <!-- /jumbotron -->
+
       </header>
   
       <main>
+
         <!-- About section -->
         <div class="container">
           <h2 class="text-center display-4 text-muted my-5"  id="about">About</h2>
           <div class="d-lg-flex align-items-center">
               <div class="photo img-about">
-                <img src="images/bert-witzel.jpg" alt="portrait of Bert Witzel">
+                <img src="images/rsz_bert-witzel.jpg" alt="portrait of Bert Witzel">
                 <div class="photo-overlay">
                   <p class="lead">Check out my book!</p>
                   <a href="http://bass-scales.com/" target="_blank" class="btn btn-primary">Visit Website</a>
@@ -268,50 +271,25 @@
             <form class="form-border border-info bg-light p-4" name="contact-form" data-netlify="true" method="POST"> 
               <div class="form-group">
                 <label class="text-body" for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Name">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
               </div>
               <div class="form-group">
                 <label  class="text-body" for="email">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
               </div>
               <div class="form-group">
                 <label  class="text-body" for="phone">Phone</label>
-                <input type="tel" class="form-control" id="phone" placeholder="###-###-####">
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="###-###-####">
               </div>
               <div class="form-group">
                 <label class="text-body" for="comments">Comments</label>
-                <textarea class="form-control" id="comments" rows="3"></textarea>
+                <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
               </div>
-              <button id="form-button" type="submit" class="btn btn-info" 
-              >Submit</button>
-              <!-- data-toggle="modal" data-target="#exampleModal" -->
-
-              
+              <button id="form-button" type="submit" class="btn btn-info">Submit</button>
             </form>
           </div>
         </div>
         <!-- /Contact section -->
-
-        <!-- Modal section -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Form Submitted</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                Thank you! I will be in touch with you shortly.
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /Modal section -->
 
         <!-- Quote section -->
         <div class="my-5 col-md-8 col-lg-6 mx-auto">
@@ -323,6 +301,7 @@
           </div>
         </div>
         <!-- /Quote section -->
+
       </main>
       
       <footer>
@@ -345,6 +324,7 @@
           </div>
         </nav>
         <!-- /footer nav -->
+
       </footer>
 
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
