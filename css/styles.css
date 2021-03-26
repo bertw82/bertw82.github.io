@@ -117,8 +117,9 @@ blockquote:before {
     font-size: 82px;
     font-style: normal;
     margin-left: 5px;
-  }
-  blockquote:after {
+}
+
+blockquote:after {
     content: '\201C';
     position: absolute;
     bottom: -35px;
@@ -127,10 +128,15 @@ blockquote:before {
     font-size: 82px;
     font-style: normal;
     margin-right: 10px;
-  }
- .footer {
-      font-size: 1rem;
-  } 
+}
+.footer {
+    font-size: 1rem;
+} 
+
+.text-hover:hover {
+    color: white;
+}
+
 
 /* media queries */
 

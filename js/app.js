@@ -23,9 +23,9 @@ function getDate() {
 getDate();
 
 // dark theme JS
-const darkThemeButton = document.getElementById('darkTheme');
+const darkTheme = document.getElementById('darkTheme');
 
-darkThemeButton.addEventListener('click', () => {
+darkTheme.addEventListener('click', () => {
     // change body color
     const body = document.querySelector('body');
     body.classList.add('body-background');
@@ -193,9 +193,9 @@ lightTheme.addEventListener('click', () => {
      quoteName.classList.remove('text-warning');
      quoteName.classList.add('text-muted');
 
-     const lightThemelabel = document.getElementById('input-label');
-     lightThemelabel.classList.remove('text-body');
-     lightThemelabel.classList.add('text-light');
+     lightTheme.parentNode.classList.remove('text-body');
+     lightTheme.parentNode.classList.add('text-light');
+     darkTheme.parentNode.classList.remove('text-body');
 });
 
   
