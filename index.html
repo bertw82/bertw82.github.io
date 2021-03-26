@@ -19,7 +19,16 @@
         <!-- nav bar -->
         <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom border-muted">
           <div class="container">
-            <a class="navbar-brand" href="#">Bert Witzel</a>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label id="input-label" class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="lightTheme" checked> Light
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="darkTheme"> Dark
+              </label>
+            </div>
+            <!-- <button type="button" class="btn btn-outline-secondary">Dark Mode</button> -->
+            <!-- <a class="navbar-brand" href="#">Bert Witzel</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,7 +46,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#contact" >Contact</a>
                 </li>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Theme
                   </a>
@@ -45,7 +54,7 @@
                     <a id="lightTheme" class="dropdown-item cursor">Light</a>
                     <a id="darkTheme" class="dropdown-item cursor">Dark</a>
                   </div>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
