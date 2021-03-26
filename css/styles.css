@@ -102,16 +102,23 @@ img[src="images/rsz_bert-witzel.jpg"]{
     background-color: #0d1117; 
 }
 
+/* quote background color */
+
+.quote-body {
+    background: #e6e6e6;
+}
+
 /* quote styles from Jorge Epunan https://codepen.io/juanbrujo/pen/BIvKs*/
 
 blockquote p {
-    font-family: 'Courgette', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
 }
 
 blockquote:before {
     content: '\201C';
     position: absolute;
-    top: -30px;
+    top: -15px;
     left: 0;
     font-family: Arial, sans-serif;
     font-size: 82px;
