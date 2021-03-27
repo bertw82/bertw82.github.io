@@ -17,6 +17,30 @@
     }
 }
 
+/* Jumbrotron styles */
+
+.main-event {
+    height: 100vh;
+}
+
+.jumbotron-image {
+    background-image: url('../images/code.jpg'); /* Photo by Mitchell Luo from Unsplash */
+    background-size: cover;
+    background-position: top center;
+    height: 50vh;
+}
+
+.lead {
+    font-size: 1.4rem;
+}
+
+.headshot {
+    height: 50vh;
+    background-image: url('../images/rsz_bert-witzel.jpg'); /* Photo by Mitchell Luo from Unsplash */
+    background-size: cover;
+    background-position: top center;
+} 
+
 /* Images */
 
 .social-image {
@@ -27,16 +51,6 @@
     animation: rotate .3s;
 }
 
-.jumbotron {
-    background-image: url('../images/code.jpg'); /* Photo by Mitchell Luo from Unsplash */
-    background-size: cover;
-    background-position: top center;
-  }
-
-img[src="images/rsz_bert-witzel.jpg"]{
-    width: 100%;
-}
-
 .img-portfolio {
     height: 16rem;
 }
@@ -44,45 +58,6 @@ img[src="images/rsz_bert-witzel.jpg"]{
 .tech-svg {
     height: 50px;
     width: 50px;
-}
-
-/* main photo */
-
-.photo {
-	position: relative;
-	line-height: 0;
-	overflow: hidden;
-}
-
-.photo-overlay {
-	color: #fff;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0; 
-	left: 0;
-    opacity: 0;
-	transition: opacity .5s;
-	display: flex;
-	 flex-direction: column;
-     flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;  
-	background: rgba(0,0,0, .5);
-}
-.photo-overlay p {
-	margin-bottom: 2em;
-}
-.photo-overlay:hover {
-	opacity: 1;
-}
-.photo img {
-	transform-origin: 0 0;
-    transition: transform .4s ease-out;
-}
-
-.photo:hover img {
-	transform: scale(1.1);
 }
 
 /* form styles */
@@ -144,7 +119,6 @@ blockquote:after {
     color: white;
 }
 
-
 /* media queries */
 
   @media (max-width: 992px){
@@ -153,8 +127,19 @@ blockquote:after {
       }
   }
   @media (min-width: 992px){
-    .img-about,
-    .p-about {
+    .headshot {
+        height: 100vh;
+        width: 50%;
+    }
+    .jumbotron-image {
+        height: 100vh;
         width: 50%;
     }
   }
+
+  @media (max-width: 576px) {
+      .headline {
+          font-size: 3.8rem;
+      }
+  }
+  
