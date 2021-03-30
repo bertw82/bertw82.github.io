@@ -8,12 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <title>Bert Witzel | Web Developer</title>
   </head>
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100" class="bg-white">
-    
+    <div class="overflow-hidden">
     <header>
 
         <!-- nav bar -->
@@ -29,10 +29,10 @@
               </label>
             </div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" data-toggle="collapse" data-target=".navbar-collapse">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="#home">Home</a>
@@ -52,26 +52,10 @@
         </nav>
         <!-- /nav bar -->
 
-        <!-- toast -->
-        <div class="position-fixed top-60 right-0 p-3" style="z-index: 5; right: 0; top: 60px;">
-          <div id="liveToast" class="toast hide" data-delay="2000" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <strong class="mr-auto"></strong>
-              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="toast-body">
-              Thanks for visiting!
-            </div>
-          </div>
-        </div>
-        <!-- /toast -->
-
         <!-- landing page -->
         <div class="main-event d-lg-flex">
           <div class="jumbotron-image d-flex flex-column justify-content-center align-items-center text-white">
-            <h1 class="display-2 headline">Bert Witzel</h1>
+            <h1 class="display-2 pt-5 headline">Bert Witzel</h1>
             <p class="lead">Web Developer</p>
           </div>
           <div class="headshot">
@@ -84,22 +68,17 @@
       <main>
 
         <!-- About section -->
-        <div class="container">
-          <h2 class="text-center display-4 text-muted my-5"  id="about">About</h2>
-          <div class="">
-              
-            <p class="p-about text-body lead mt-4 mt-lg-0 ml-lg-5">
-              Hello! I am a freelance web developer who loves to create fantastic looking websites for my clients. I am very interested in website design and functionality, and I always strive for a clean and attractive website design.<br><br> 
-              
-              As a graduate of <a href="https://teamtreehouse.com" class="text-primary" style="text-decoration: none;" target="_blank">Treehouse</a>, I am well-versed in HTML, CSS, Sass, and JavaScript, and I use all of these technologies to fulfill my clients vision. As a lifetime learner and problem solver, I bring my problem solving skills to tackle any project given to me. I look forward to working with you to help realize your vision for a website!
-            </p>
-          </div>
+        <div class="container" id="about">
+          <h2 class="text-center display-4 text-muted my-5 translate">About</h2>  
+          <p class="p-about text-body lead mt-4 mt-lg-0 ml-lg-5 background-alt p-3 p-md-4">
+            Hello! I am a freelance web developer who loves to create fantastic websites for my clients. As a graduate of <a href="https://teamtreehouse.com" class="text-primary" style="text-decoration: none;" target="_blank">Treehouse</a>, I am well-versed in HTML, CSS, Sass, and JavaScript, and I use all of these technologies to create attractive and functional websites. I look forward to working with you to help realize your vision for a website!
+          </p>
         </div>
         <!-- /About section -->
   
         <!-- Portfolio section -->
-        <div class="container">
-          <h2 class="text-center display-4 text-muted my-5" id="portfolio">Portfolio</h2>
+        <div class="container" id="portfolio">
+          <h2 class="text-center display-4 text-muted my-5 translate">Portfolio</h2>
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
             <div class="col mb-4">
@@ -109,7 +88,7 @@
                 </div>
                 <div class="card-body border-top border-muted d-flex flex-column">
                   <h5 class="card-title">Dashboard App</h5>
-                  <p class="card-text mb-4">Responsive webpage featuring svg manipulation, charts, CSS grid, keyframes animation and use of local storage.</p>
+                  <p class="card-text mb-5">Responsive webpage featuring svg manipulation, charts, CSS grid, keyframes animation and use of local storage.</p>
                   <div class="d-flex justify-content-around mt-auto mb-4">
                     <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
                     <img class="tech-svg" src="images/svg/sass.svg" alt="sass emblem svg">
@@ -126,9 +105,9 @@
                 <div class="img-portfolio overflow-auto">
                   <img class="w-100" src="images/portfolio/employee-directory.jpg" alt="employee directory API project">
                 </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
+                <div class="card-body border-top border-muted d-flex flex-column ">
                   <h5 class="card-title">API Employee Directory</h5>
-                  <p class="card-text mb-4">Responsive, interactive Employee Directory using Fetch API. Click on an employee and a modal window opens. Search functionality to search for employees by name.</p>
+                  <p class="card-text mb-5">Responsive, interactive Employee Directory using Fetch API. Click on an employee and a modal window opens. Search functionality to search for employees by name.</p>
                   <div class="d-flex justify-content-around mt-auto mb-4">
                     <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
                     <img class="tech-svg" src="images/svg/sass.svg" alt="sass emblem svg">
@@ -147,7 +126,7 @@
                 </div>
                 <div class="card-body border-top border-muted d-flex flex-column">
                   <h5 class="card-title">Tourism Website</h5>
-                  <p class="card-text mb-4">Multi-page responsive website featuring a lightbox photo gallery, CSS accordion menu, HTML table and original images.</p>
+                  <p class="card-text mb-5">Multi-page responsive website featuring a lightbox photo gallery, CSS accordion menu, HTML table and original images.</p>
                   <div class="d-flex justify-content-around mt-auto mb-4">
                     <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
                     <img class="tech-svg" src="images/svg/sass.svg" alt="sass emblem svg">
@@ -166,7 +145,7 @@
                 </div>
                 <div class="card-body border-top border-muted d-flex flex-column">
                   <h5 class="card-title">FeatherLITE App</h5>
-                  <p class="card-text mb-4">Interactive note-taking app for mobile and tablet screen sizes. Notes can be created and deleted.</p>
+                  <p class="card-text mb-5">Interactive note-taking app for mobile and tablet screen sizes. Notes can be created and deleted.</p>
                   <div class="d-flex justify-content-around mt-auto mb-4">
                     <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
                     <img class="tech-svg" src="images/svg/sass.svg" alt="sass emblem svg">
@@ -185,7 +164,7 @@
                 </div>
                 <div class="card-body border-top border-muted d-flex flex-column">
                   <h5 class="card-title">Symphonic Wheel of Success Game</h5>
-                  <p class="card-text mb-4">Word-guessing game where user chooses letters on a keyboard to guess the phrase. 
+                  <p class="card-text mb-5">Word-guessing game where user chooses letters on a keyboard to guess the phrase. 
                   </p>
                   <div class="d-flex justify-content-around mt-auto mb-4">
                     <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
@@ -205,7 +184,7 @@
                 </div>
                 <div class="card-body border-top border-muted d-flex flex-column">
                   <h5 class="card-title">Portfolio Website</h5>
-                  <p class="card-text mb-4">Responsive float-based layout portfolio website. 
+                  <p class="card-text mb-5">Responsive float-based layout portfolio website. 
                   </p>
                   <div class="d-flex justify-content-around mt-auto mb-4">
                     <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
@@ -224,7 +203,7 @@
                 </div>
                 <div class="card-body border-top border-muted d-flex flex-column">
                   <h5 class="card-title">Form</h5>
-                  <p class="card-text mb-4">Interactive form for tablet and mobile screen sizes using flexbox. 
+                  <p class="card-text mb-5">Interactive form for tablet and mobile screen sizes using flexbox. 
                   </p>
                   <div class="d-flex justify-content-around mt-auto mb-4">
                     <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
@@ -243,7 +222,7 @@
                 </div>
                 <div class="card-body border-top border-muted d-flex flex-column">
                   <h5 class="card-title">Countdown Timer</h5>
-                  <p class="card-text mb-4">Frontend Mentor project for tablet and mobile screen sizes featuring a countdown timer.
+                  <p class="card-text mb-5">Frontend Mentor project for tablet and mobile screen sizes featuring a countdown timer.
                   </p>
                   <div class="d-flex justify-content-around mt-auto mb-4">
                     <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
@@ -260,8 +239,8 @@
         <!-- /Portfolio section -->
   
         <!-- Contact section -->
-        <div class="container mb-5">
-          <h2 class="text-center display-4 text-muted mb-5 mt-4" id="contact">Contact</h2>
+        <div class="container mb-5" id="contact">
+          <h2 class="text-center display-4 text-muted mb-5 mt-4 translate">Contact</h2>
           <div class="col-lg-8 mx-auto">
             <form class="form-border border-info bg-light p-4" name="contact-form" data-netlify="true" method="POST"> 
               <div class="form-group">
@@ -287,9 +266,9 @@
         <!-- /Contact section -->
       
         <!-- Quote section -->
-        <div class="my-5 col-md-10 col-lg-8 mx-auto quote-body pt-3">
+        <div class="my-5 col-md-10 col-lg-8 mx-auto background-alt pt-3 js-quote">
           <div class="card-body ">
-            <blockquote class="blockquote text-dark text-center mb-0">
+            <blockquote class="blockquote text-dark text-center mb-0 pl-2 pr-2">
               <p>To me programming is more than an important practical art. It is also a gigantic undertaking in the foundations of knowledge.</p>
             </blockquote>
             <footer class="blockquote-footer footer text-muted text-center">Grace Hopper</footer>
@@ -321,7 +300,7 @@
         <!-- /footer nav -->
 
       </footer>
-
+    </div>
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
