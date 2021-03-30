@@ -10,45 +10,48 @@ $('.popover-dismiss').popover({
     trigger: 'focus'
   });
 
-// const toastDate = document.querySelector('.mr-auto');
-// function getDate() {
-//     const today = new Date();
-//     const day = today.getDate();
-//     const month = today.getMonth();
-//     const year = today.getFullYear();
-//     const monthsLong = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-//     const monthName = monthsLong[month];
-//     toastDate.textContent = `${monthName} ${day}, ${year}`;
-// }
-// getDate();
-
 /*** 
- * Section title translate
+ * floating button code
  ***/ 
 
-// select all boxes
-const translate = document.querySelectorAll('.translate')
-// listen for scroll event and call the checkBoxes function every time the user scrolls 
-window.addEventListener('scroll', checkBoxes)
-// call function on pageload so the first boxes are displayed
-checkBoxes()
+var mybutton = document.getElementById("myBtn");
 
+window.onscroll = function() {
+    scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// click button to go to top
+mybutton.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+     document.documentElement.scrollTop = 0;
+});
+
+/*** 
+ * Section title translateX functionality
+ ***/ 
+
+const translate = document.querySelectorAll('.translate')
+window.addEventListener('scroll', checkBoxes);
+checkBoxes();
 
 function checkBoxes() {
-  // variable stores the point at which you want the element to move into the page. In this example at 80% from the top.
-    const triggerBottom = window.innerHeight / 5 * 4
-
-    translate.forEach(box => {
-      // check the location of the box on the page
-        const boxTop = box.getBoundingClientRect().top
-
-        // show the box when its further down the page then the 80% from the top
-        if(boxTop < triggerBottom) {
-            box.classList.add('show')
+    const triggerBottom = window.innerHeight / 5 * 4;
+    translate.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < triggerBottom) {
+            section.classList.add('show');
         } else {
-            box.classList.remove('show')
+            section.classList.remove('show');
         }
-    })
+    });
 }
 
 /*** 
