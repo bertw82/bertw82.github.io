@@ -24,9 +24,10 @@
 }
 
 .main-image {
-    background-image: url('../images/rsz_1code.jpg'); /* Photo by Mitchell Luo from Unsplash */
+    /* Photo by Mitchell Luo from Unsplash */
+    /* background-image: url('../images/rsz_1code.jpg'); 
     background-size: cover;
-    background-position: top center;
+    background-position: top center; */
     height: 50vh;
 }
 
@@ -35,12 +36,19 @@
 }
 
 .headshot {
-    border-top: 1px solid #f2f2f2;
-    height: 50vh;
+    /* border-top: 1px solid #f2f2f2; */
+    height: 70vh;
     background-image: url('../images/rsz_bert-witzel.jpg'); /* Photo by Mitchell Luo from Unsplash */
     background-size: cover;
     background-position: top center;
 } 
+
+.jumbotron {
+    height: 100vh;
+}
+.headshot-caption {
+    height: 30vh;
+}
 
 /* Images */
 
@@ -60,6 +68,7 @@
     height: 50px;
     width: 50px;
 }
+
 
 /* form styles */
 
@@ -81,7 +90,8 @@
 /* quote background color */
 
 .background-alt {
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
+    background: #e9ecef;
 }
 
 /* quote styles from Jorge Epunan https://codepen.io/juanbrujo/pen/BIvKs*/
@@ -153,12 +163,12 @@ blockquote:after {
       }
   }
   @media (min-width: 992px){
-    .headshot {
+    /* .headshot {
         height: 100vh;
         width: 50%;
         border-top: none;
         border-left: 1px solid #f2f2f2;
-    }
+    } */
     .main-image {
         height: 100vh;
         width: 50%;

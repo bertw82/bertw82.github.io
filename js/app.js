@@ -12,8 +12,6 @@ $('.popover-dismiss').popover({
 
 /*** 
  * floating button code
- ***/ 
-
 var mybutton = document.getElementById("myBtn");
 
 window.onscroll = function() {
@@ -27,12 +25,13 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
 // click button to go to top
 mybutton.addEventListener('click', () => {
     document.body.scrollTop = 0;
      document.documentElement.scrollTop = 0;
 });
+
+ ***/ 
 
 /*** 
  * Section title translateX functionality
