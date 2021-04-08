@@ -11,29 +11,6 @@ $('.popover-dismiss').popover({
   });
 
 /*** 
- * floating button code
-var mybutton = document.getElementById("myBtn");
-
-window.onscroll = function() {
-    scrollFunction()
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-// click button to go to top
-mybutton.addEventListener('click', () => {
-    document.body.scrollTop = 0;
-     document.documentElement.scrollTop = 0;
-});
-
- ***/ 
-
-/*** 
  * Section title translateX functionality
  ***/ 
 
@@ -59,6 +36,8 @@ function checkBoxes() {
 
 const body = document.querySelector('body');
 const nav = document.getElementById('nav');
+const jumbotron = document.querySelector('.jumbotron');
+const headshotText = document.querySelector('.headshot-caption');
 const footerNav = document.getElementById('footerNav');
 const footerText = document.querySelector('small');
 const h2 = document.getElementsByTagName('h2');
@@ -89,6 +68,11 @@ darkTheme.addEventListener('click', () => {
     // change nav styles
     nav.classList.add('navbar-dark', 'bg-dark', 'border-secondary');
     nav.classList.remove('navbar-light', 'bg-light', 'border-muted');
+    // change jumbotron styles
+    jumbotron.classList.add('bg-dark');
+    jumbotron.classList.remove('background-alt');
+    headshotText.classList.remove('text-body');
+    headshotText.classList.add('text-white');
     // change footer nav styles
     footerNav.classList.add('bg-dark', 'border-secondary');
     footerNav.classList.remove('bg-light', 'border-muted');
@@ -159,6 +143,11 @@ lightTheme.addEventListener('click', () => {
      // change nav styles
      nav.classList.remove('navbar-dark', 'bg-dark', 'border-secondary');
      nav.classList.add('navbar-light', 'bg-light', 'border-muted');
+      // change jumbotron styles
+    jumbotron.classList.remove('bg-dark');
+    jumbotron.classList.add('background-alt');
+    headshotText.classList.add('text-body');
+    headshotText.classList.remove('text-white');
      // change footer nav styles
      footerNav.classList.remove('bg-dark', 'border-secondary');
      footerNav.classList.add('bg-light', 'border-muted');
