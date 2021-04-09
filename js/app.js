@@ -36,8 +36,8 @@ function checkBoxes() {
 
 const body = document.querySelector('body');
 const nav = document.getElementById('nav');
-const jumbotron = document.querySelector('.jumbotron');
-const headshotText = document.querySelector('.headshot-caption');
+const jsBackground = document.querySelector('.js-background');
+const headshotText = document.querySelector('.container-title');
 const footerNav = document.getElementById('footerNav');
 const footerText = document.querySelector('small');
 const h2 = document.getElementsByTagName('h2');
@@ -69,8 +69,8 @@ darkTheme.addEventListener('click', () => {
     nav.classList.add('navbar-dark', 'bg-dark', 'border-secondary');
     nav.classList.remove('navbar-light', 'bg-light', 'border-muted');
     // change jumbotron styles
-    jumbotron.classList.add('bg-dark');
-    jumbotron.classList.remove('background-alt');
+    jsBackground.classList.add('bg-dark');
+    jsBackground.classList.remove('bg-light');
     headshotText.classList.remove('text-body');
     headshotText.classList.add('text-white');
     // change footer nav styles
@@ -144,8 +144,8 @@ lightTheme.addEventListener('click', () => {
      nav.classList.remove('navbar-dark', 'bg-dark', 'border-secondary');
      nav.classList.add('navbar-light', 'bg-light', 'border-muted');
       // change jumbotron styles
-    jumbotron.classList.remove('bg-dark');
-    jumbotron.classList.add('background-alt');
+    jsBackground.classList.remove('bg-dark');
+    jsBackground.classList.add('bg-light');
     headshotText.classList.add('text-body');
     headshotText.classList.remove('text-white');
      // change footer nav styles

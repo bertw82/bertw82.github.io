@@ -19,21 +19,24 @@
 
 /* Header styles */
 
+.cover-image {
+    height: 100vh;
+}
+
 .lead {
     font-size: 1.4rem;
 }
 
 .headshot {
-    height: 65vh;
-    background-image: url('../images/rsz_bert-witzel.jpg'); /* Photo by Mitchell Luo from Unsplash */
+    height: 70vh;
+    background-image: url('../images/rsz_bert-witzel.jpg'); 
+    /* Photo by Mitchell Luo from Unsplash */
     background-size: cover;
     background-position: top center;
 } 
-
-.jumbotron {
-    height: 100vh;
+.head-contain {
+    padding-top: 4rem!important;
 }
-
 
 /* Images */
 
@@ -54,6 +57,11 @@
     width: 50px;
 }
 
+.arrow {
+    width: 40px;
+    /* height: 60px; */
+}
+
 /* form styles */
 
 .form-border {
@@ -69,13 +77,6 @@
 
 .body-background {
     background-color: #0d1117; 
-}
-
-/* quote background color */
-
-.background-alt {
-    /* background: #f2f2f2; */
-    background: #e9ecef;
 }
 
 /* quote styles from Jorge Epunan https://codepen.io/juanbrujo/pen/BIvKs*/
@@ -131,29 +132,15 @@ blockquote:after {
 
 /* media queries */
 
-@media (min-width: 550px) and (max-width: 575px){
-    .headshot-caption {
-        display: flex;
-        align-items: center;
-        margin-top: .5rem !important;
-    }  
-    .headshot-caption p {
-        margin-left: auto;
-    }  
+@media (min-height: 420px) {
+    .container-title {
+        height: 24vh;
+    }
 }
 
 @media (max-width: 992px){
     .p-about {
         margin-top: 1rem;
-    }
-}
-@media (min-width: 992px){
-    .headshot {
-        height: 70vh;
-    }
-    .main-image {
-        height: 100vh;
-        width: 50%;
     }
 }
 
