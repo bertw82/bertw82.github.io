@@ -84,7 +84,7 @@ darkTheme.addEventListener('click', () => {
         h2[i].classList.remove('text-muted');
     }
     // change lead paragraph styles
-    leadParagraph.classList.add('text-light', 'bg-dark');
+    leadParagraph.classList.add('text-light', 'bg-dark', 'border-secondary');
     leadParagraph.classList.remove('text-body', 'background-alt');
     const leadLink = document.querySelector('.text-primary');
     leadLink.classList.add('text-success');
@@ -127,7 +127,7 @@ darkTheme.addEventListener('click', () => {
     quote.classList.remove('text-dark');
     quoteName.classList.add('text-warning');
     quoteName.classList.remove('text-muted');
-    quoteBody.classList.add('bg-dark');
+    quoteBody.classList.add('bg-dark', 'border-secondary');
 });
 
 /*** 
@@ -160,7 +160,7 @@ lightTheme.addEventListener('click', () => {
      }
      // change lead paragraph styles
      leadParagraph.classList.remove('text-light', 'bg-dark');
-     leadParagraph.classList.add('text-body', 'background-alt');
+     leadParagraph.classList.add('text-body', 'background-alt', 'border-muted');
      const leadLink = document.querySelector('a[href="https://teamtreehouse.com"]');
      leadLink.classList.add('text-primary');
      leadLink.classList.remove('text-success');
@@ -202,8 +202,8 @@ lightTheme.addEventListener('click', () => {
      quote.classList.add('text-dark');
      quoteName.classList.remove('text-warning');
      quoteName.classList.add('text-muted');
-     quoteBody.classList.remove('bg-dark');
-     quoteBody.classList.add('background-alt');
+     quoteBody.classList.remove('bg-dark', 'border-secondary');
+     quoteBody.classList.add('background-alt', 'border-muted');
      // address buggy behavior with radio buttons 
      lightTheme.parentNode.classList.remove('text-body');
      lightTheme.parentNode.classList.add('text-light');
