@@ -66,15 +66,15 @@ darkTheme.addEventListener('click', () => {
     body.classList.add('body-background');
     body.classList.remove('bg-white');
     // change nav styles
-    nav.classList.add('navbar-dark', 'bg-dark', 'border-secondary');
+    nav.classList.add('navbar-dark', 'nav-dark', 'border-secondary');
     nav.classList.remove('navbar-light', 'bg-light', 'border-muted');
     // change jumbotron styles
     jsBackground.classList.add('bg-dark');
-    jsBackground.classList.remove('bg-light');
+    jsBackground.classList.remove('darker-bg');
     headshotText.classList.remove('text-body');
     headshotText.classList.add('text-white');
     // change footer nav styles
-    footerNav.classList.add('bg-dark', 'border-secondary');
+    footerNav.classList.add('nav-dark', 'border-secondary');
     footerNav.classList.remove('bg-light', 'border-muted');
     footerText.parentNode.classList.add('text-light');
     footerText.parentNode.classList.remove('text-dark');
@@ -141,15 +141,15 @@ lightTheme.addEventListener('click', () => {
      body.classList.remove('body-background');
      body.classList.add('bg-white');
      // change nav styles
-     nav.classList.remove('navbar-dark', 'bg-dark', 'border-secondary');
+     nav.classList.remove('navbar-dark', 'nav-dark', 'border-secondary');
      nav.classList.add('navbar-light', 'bg-light', 'border-muted');
       // change jumbotron styles
     jsBackground.classList.remove('bg-dark');
-    jsBackground.classList.add('bg-light');
+    jsBackground.classList.add('darker-bg');
     headshotText.classList.add('text-body');
     headshotText.classList.remove('text-white');
      // change footer nav styles
-     footerNav.classList.remove('bg-dark', 'border-secondary');
+     footerNav.classList.remove('nav-dark', 'border-secondary');
      footerNav.classList.add('bg-light', 'border-muted');
      footerText.parentNode.classList.remove('text-light');
      footerText.parentNode.classList.add('text-dark');

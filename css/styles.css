@@ -17,6 +17,15 @@
     }
 }
 
+/* colors */
+.darker-bg {
+    background-color: #E9ECEF;
+}
+
+.nav-dark {
+    background-color: #212529;
+}
+
 /* Header styles */
 
 .cover-image {
