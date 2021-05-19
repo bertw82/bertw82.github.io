@@ -159,7 +159,7 @@ lightTheme.addEventListener('click', () => {
          h2[i].classList.add('text-muted');
      }
      // change lead paragraph styles
-     leadParagraph.classList.remove('text-light', 'bg-dark');
+     leadParagraph.classList.remove('text-light', 'bg-dark', 'border-secondary');
      leadParagraph.classList.add('text-body', 'background-alt', 'border-muted');
      const leadLink = document.querySelector('a[href="https://teamtreehouse.com"]');
      leadLink.classList.add('text-primary');
