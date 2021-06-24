@@ -15,26 +15,27 @@ $('.popover-dismiss').popover({
  ***/ 
 
 const h2title = document.querySelectorAll('.translate');
-window.addEventListener('scroll', translateTitle);
-translateTitle();
+// window.addEventListener('scroll', translateTitle);
+// translateTitle();
 
-function translateFunc(element) {
-    const triggerBottom = window.innerHeight / 5 * 4;
-    const sectionTop = element.getBoundingClientRect().top;
-        if (sectionTop < triggerBottom) {
-            element.classList.add('show');
-            setTimeout(function(){
-                element.classList.add('skew');
-            }, 300);
+// function translateFunc(element) {
+//     const triggerBottom = window.innerHeight / 5 * 4;
+//     const sectionTop = element.getBoundingClientRect().top;
+//         if (sectionTop < triggerBottom) {
+//             element.classList.add('show');
+//             setTimeout(function(){
+//                 element.classList.add('skew');
+//             }, 300);
     
-        } else {
-            element.classList.remove('show','skew');
-        }
-}
+//         } else {
+//             element.classList.add('fadeOut');
+//             element.classList.remove('show','skew');
+//         }
+// }
 
-function translateTitle() {
-    h2title.forEach(section => translateFunc(section));
-}
+// function translateTitle() {
+//     h2title.forEach(section => translateFunc(section));
+// }
   
 /**
  * Fade in/out for h3 from https://stackoverflow.com/questions/62979056/fade-in-and-out-when-scroll-up-and-down
@@ -60,6 +61,7 @@ function observerCallback(entries, observer) {
 const fadeElms = document.querySelectorAll('.fadeTitle');
 const observer = new IntersectionObserver(observerCallback, observerOptions);
 fadeElms.forEach(el => observer.observe(el));
+// h2title.forEach(el => observer.observe(el));
 
 /*** 
  * Variables for Light and Dark Themes 
