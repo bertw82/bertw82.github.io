@@ -156,7 +156,7 @@ blockquote:after {
 }
 
 .translate {
-    transform: translateX(200%);
+    transform: translateX(400%);
     opacity: 0;
     transition: all .3s ease;
 }

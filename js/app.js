@@ -26,10 +26,10 @@ function translateFunc(element) {
             setTimeout(function(){
                 element.classList.add('skew');
             }, 300);
+    
+        } else {
+            element.classList.remove('show','skew');
         }
-        // } else {
-        //     element.classList.remove('show','skew');
-        // }
 }
 
 function translateTitle() {
