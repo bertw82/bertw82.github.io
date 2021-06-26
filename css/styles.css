@@ -2,17 +2,11 @@
 
 @keyframes rotate {
     25% {
-        transform: rotate(90deg) scale(1.2);
+        transform: scale(0);
     }
-    50% {
-        transform: rotate(180deg) scale(1.4);
-
-    }
-    75% {
-        transform: rotate(270deg) scale(1.2);
-    }
+   
     100% {
-        transform: rotate(360deg) scale(1);
+        transform: scale(1);
  
     }
 }
@@ -84,10 +78,10 @@
 
 .social-image {
     width: 30px;
-    height: 30px;
+    transition: transform .5s;
 }
 .social-image:hover {
-    animation: rotate .3s;
+    transform: scale(1.4);
 }
 
 .img-portfolio {
