@@ -61,7 +61,6 @@ function observerCallback(entries, observer) {
 const fadeElms = document.querySelectorAll('.fadeTitle');
 const observer = new IntersectionObserver(observerCallback, observerOptions);
 fadeElms.forEach(el => observer.observe(el));
-// h2title.forEach(el => observer.observe(el));
 
 /*** 
  * Variables for Light and Dark Themes 
@@ -91,6 +90,7 @@ const quoteBody = document.querySelector('.js-quote');
 const portfolioFewd = document.querySelector('#portfolioFewd');
 const portfolioJs = document.querySelector('#portfolioJs');
 const h3 = document.querySelectorAll('h3');
+const dropDown = document.querySelector('.dropdown-menu');
 
 /***
  * Dark Theme function
@@ -171,19 +171,19 @@ darkTheme.addEventListener('click', () => {
     quoteName.classList.add('text-warning');
     quoteBody.classList.add('bg-dark', 'border-secondary');
     // change before/after border
-    if (window.screen.width >= 768){
-        portfolioFewd.classList.remove('line-1');
-        portfolioFewd.classList.add('line-3');
-        portfolioJs.classList.remove('line-2');
-        portfolioJs.classList.add('line-4');
-    }
+    portfolioFewd.classList.remove('line-1');
+    portfolioFewd.classList.add('line-3');
+    portfolioJs.classList.remove('line-2');
+    portfolioJs.classList.add('line-4');
     // change h3 border
-    // if (window.screen.width < 768) {
+    if (window.screen.width < 768) {
         borderDiv.forEach(el => {
             el.classList.remove('h3-dark');
             el.classList.add('h3-light');
         });
-    // }
+    }
+    // change dropdown menu background
+    dropDown.style.backgroundColor = '#ced4da';
 });
 
 /*** 
@@ -270,20 +270,39 @@ lightTheme.addEventListener('click', () => {
     lightTheme.parentNode.classList.add('text-light');
     darkTheme.parentNode.classList.remove('text-body');
     // change before/after border
-    if (window.screen.width >= 768){
+    // if (window.screen.width >= 768){
         portfolioFewd.classList.remove('line-3');
         portfolioFewd.classList.add('line-1');
         portfolioJs.classList.remove('line-4');
         portfolioJs.classList.add('line-2');
-    }
+    // }
      // change h3 border
-    // if (window.screen.width < 768) {
+    if (window.screen.width < 768) {
         borderDiv.forEach(el => {
             el.classList.remove('h3-light');
             el.classList.add('h3-dark');
         });
-    // }
+    }
+    // change dropdown menu background
+    dropDown.style.backgroundColor = '#FFF';
 });
+
+// listen for screen adjustment for h3 border and before/after
+// const mediaQuery = window.matchMedia('(max-width: 600px)');
+
+// function screenTest(e) {
+//   if (e.matches) {
+//     /* the viewport is 600 pixels wide or less */
+//     para.textContent = 'This is a narrow screen — less than 600px wide.';
+//     document.body.style.backgroundColor = 'red';
+//   } else {
+//     /* the viewport is more than than 600 pixels wide */
+//     para.textContent = 'This is a wide screen — more than 600px wide.';
+//     document.body.style.backgroundColor = 'blue';
+//   }
+// }
+// screenTest(mql);
+// mql.addEventListener('change', screenTest);
 
   
   
