@@ -14,7 +14,7 @@ $('.popover-dismiss').popover({
  * Section title translateX functionality
  ***/ 
 
-const h2title = document.querySelectorAll('.translate');
+// const h2title = document.querySelectorAll('.translate');
 // window.addEventListener('scroll', translateTitle);
 // translateTitle();
 
@@ -74,7 +74,7 @@ const headshotText = document.querySelector('.container-title');
 const footerNav = document.getElementById('footerNav');
 const footerText = document.querySelector('small');
 const h2 = document.getElementsByTagName('h2');
-const h3 = document.querySelectorAll('h3');
+const borderDiv = document.querySelectorAll('.h3-border');
 const leadParagraph = document.querySelector('.p-about');
 const card = document.querySelectorAll('.h-100');
 const cardBody = document.querySelectorAll('.card-body');
@@ -90,6 +90,7 @@ const quoteName = document.querySelector('.blockquote-footer');
 const quoteBody = document.querySelector('.js-quote');
 const portfolioFewd = document.querySelector('#portfolioFewd');
 const portfolioJs = document.querySelector('#portfolioJs');
+const h3 = document.querySelectorAll('h3');
 
 /***
  * Dark Theme function
@@ -176,6 +177,13 @@ darkTheme.addEventListener('click', () => {
         portfolioJs.classList.remove('line-2');
         portfolioJs.classList.add('line-4');
     }
+    // change h3 border
+    // if (window.screen.width < 768) {
+        borderDiv.forEach(el => {
+            el.classList.remove('h3-dark');
+            el.classList.add('h3-light');
+        });
+    // }
 });
 
 /*** 
@@ -268,6 +276,13 @@ lightTheme.addEventListener('click', () => {
         portfolioJs.classList.remove('line-4');
         portfolioJs.classList.add('line-2');
     }
+     // change h3 border
+    // if (window.screen.width < 768) {
+        borderDiv.forEach(el => {
+            el.classList.remove('h3-light');
+            el.classList.add('h3-dark');
+        });
+    // }
 });
 
   
