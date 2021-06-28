@@ -19,7 +19,7 @@
     <div class="overflow-hidden">
     <header>
         <!-- nav bar -->
-        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom border-muted">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark darker-bg fixed-top">
           <div class="container">
         
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,16 +28,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#home">Home</a>
+                  <a class="nav-link nav-text" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link nav-text" href="#about">About</a>
                 </li>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li> -->
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Portfolio
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -46,7 +46,7 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contact" >Contact</a>
+                  <a class="nav-link nav-text" href="#contact" >Contact</a>
                 </li>
               </ul>
             </div>
@@ -55,11 +55,11 @@
         <!-- /nav bar -->
 
         <!-- landing page -->
-        <div class="darker-bg js-background">
+        <div class="bg-light js-background border-bottom border-muted">
           <div class="container head-contain">
             <div class="headshot"></div>
           </div>
-          <div class="container container-title py-2">
+          <div class="container title-text container-title py-2">
             <h1 class="display-4">Bert Witzel</h1>
             <p class="lead">Freelance Web Developer</p>
           </div>
@@ -101,6 +101,7 @@
             </div>           
           </div>
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+
             <div class="col mb-4">
               <div class="card bg-light h-100 mx-auto border-muted">
                 <div class="img-portfolio overflow-auto">
@@ -138,6 +139,26 @@
                 </div>
               </div>
             </div>
+
+            <div class="col mb-4">
+              <div class="card bg-light h-100 mx-auto border-muted">
+                <div class="img-portfolio overflow-auto">
+                  <img class="w-100" src="images/portfolio/bass-scales.jpg" alt="scale book project">
+                </div>
+                <div class="card-body border-top border-muted d-flex flex-column">
+                  <h5 class="card-title">Book Website</h5>
+                  <p class="card-text mb-5">Personal website for a double bass scale book that I self-published. Built with Bootstrap and featuring a lightbox photo gallery and other personal touches.
+                  </p>
+                  <div class="d-flex justify-content-around mt-auto mb-4">
+                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
+                    <img class="tech-svg" src="images/svg/css.svg" alt="css emblem svg">
+                    <img  class="tech-svg" src="images/svg/bootstrap.svg" alt="Bootstrap icon"> 
+                  </div> 
+                  <a href="https://bass-scales.com" class="btn-project btn btn-primary mt-5" target="_blank">View Project</a>
+                </div>
+              </div>
+            </div>
+
 
             <div class="col mb-4">
               <div class="card bg-light h-100 mx-auto border-muted">
@@ -217,25 +238,6 @@
               </div>
             </div>
 
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/bass-scales.jpg" alt="scale book project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Book Website</h5>
-                  <p class="card-text mb-5">Personal website for a double bass scale book that I self-published. Built with Bootstrap and featuring a lightbox photo gallery and other personal touches.
-                  </p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/css.svg" alt="css emblem svg">
-                    <img  class="tech-svg" src="images/svg/bootstrap.svg" alt="Bootstrap icon"> 
-                  </div> 
-                  <a href="https://bass-scales.com" class="btn-project btn btn-primary mt-5" target="_blank">View Project</a>
-                </div>
-              </div>
-            </div>
-
             <div class="col mb-4 d-none d-md-block ">
               <div class="card bg-light h-100 mx-auto border-muted">
                 <div class="img-portfolio overflow-auto">
@@ -286,18 +288,17 @@
             <div class="col mb-4">
               <div class="card bg-light h-100 mx-auto border-muted">
                 <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/randomquote.jpg" alt="random quote generator project">
+                  <img class="w-100" src="images/portfolio/side-projects.jpg" alt="side project portfolio">
                 </div>
                 <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Random Quote Generator</h5>
-                  <p class="card-text mb-5">Random quotes and background colors are generated with JavaScript functionality in this app. </p>
+                  <h5 class="card-title">Side Project Portfolio</h5>
+                  <p class="card-text mb-5">A portfolio of coding side projects created with Node.js, Express, Pug, and deployed on Heroku.</p>
                   <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/css.svg" alt="css emblem svg">
+                    <img class="tech-svg" src="images/svg/node.svg" alt="node.js svg">
                     <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
                   </div> 
-                  <a href="https://bertw82.github.io/random-quote-generator/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/random-quote-generator" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
+                  <a href="https://side-project-portfolio.herokuapp.com/" class="btn-project btn btn-primary" target="_blank">View Project</a>
+                  <a href="https://github.com/bertw82/node.js-express-portfolio" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
                 </div>
               </div>
             </div>
@@ -322,25 +323,6 @@
             <div class="col mb-4">
               <div class="card bg-light h-100 mx-auto border-muted">
                 <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/pagination.jpg" alt="data pagination project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Data Pagination and Filtering</h5>
-                  <p class="card-text mb-5">Pagination functionality and search filter functionality was created using JavaScript in this project.</p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/css.svg" alt="css emblem svg">
-                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/data-pagination-and-filtering/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/data-pagination-and-filtering" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
                   <img class="w-100" src="images/portfolio/phrase-hunter.jpg" alt="phrase hunter game project">
                 </div>
                 <div class="card-body border-top border-muted d-flex flex-column">
@@ -355,21 +337,41 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="col mb-4">
               <div class="card bg-light h-100 mx-auto border-muted">
                 <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/side-projects.jpg" alt="side project portfolio">
+                  <img class="w-100" src="images/portfolio/randomquote.jpg" alt="random quote generator project">
                 </div>
                 <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Side Project Portfolio</h5>
-                  <p class="card-text mb-5">A portfolio of coding side projects created with Node.js, Express, Pug, and deployed on Heroku.</p>
+                  <h5 class="card-title">Random Quote Generator</h5>
+                  <p class="card-text mb-5">Random quotes and background colors are generated with JavaScript functionality in this app. </p>
                   <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/node.svg" alt="node.js svg">
+                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
+                    <img class="tech-svg" src="images/svg/css.svg" alt="css emblem svg">
                     <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
                   </div> 
-                  <a href="https://side-project-portfolio.herokuapp.com/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/node.js-express-portfolio" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
+                  <a href="https://bertw82.github.io/random-quote-generator/" class="btn-project btn btn-primary" target="_blank">View Project</a>
+                  <a href="https://github.com/bertw82/random-quote-generator" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col mb-4">
+              <div class="card bg-light h-100 mx-auto border-muted">
+                <div class="img-portfolio overflow-auto">
+                  <img class="w-100" src="images/portfolio/pagination.jpg" alt="data pagination project">
+                </div>
+                <div class="card-body border-top border-muted d-flex flex-column">
+                  <h5 class="card-title">Data Pagination and Filtering</h5>
+                  <p class="card-text mb-5">Pagination functionality and search filter functionality was created using JavaScript in this project.</p>
+                  <div class="d-flex justify-content-around mt-auto mb-4">
+                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
+                    <img class="tech-svg" src="images/svg/css.svg" alt="css emblem svg">
+                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
+                  </div> 
+                  <a href="https://bertw82.github.io/data-pagination-and-filtering/" class="btn-project btn btn-primary" target="_blank">View Project</a>
+                  <a href="https://github.com/bertw82/data-pagination-and-filtering" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
                 </div>
               </div>
             </div>

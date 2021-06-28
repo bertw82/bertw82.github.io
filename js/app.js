@@ -13,7 +13,6 @@ $('.popover-dismiss').popover({
 /*** 
  * Section title translateX functionality
  ***/ 
-
 // const h2title = document.querySelectorAll('.translate');
 // window.addEventListener('scroll', translateTitle);
 // translateTitle();
@@ -103,12 +102,12 @@ darkTheme.addEventListener('click', () => {
     body.classList.remove('bg-white');
     body.classList.add('body-background');
     // change nav styles
-    nav.classList.remove('navbar-light', 'bg-light', 'border-muted');
-    nav.classList.add('navbar-dark', 'nav-dark', 'border-secondary');
+    nav.classList.remove('darker-bg');
+    nav.classList.add('nav-dark', 'border-bottom', 'border-secondary');
     // change jumbotron styles
-    jsBackground.classList.remove('darker-bg');
-    jsBackground.classList.add('bg-dark');
-    headshotText.classList.remove('text-body');
+    jsBackground.classList.remove('bg-light', 'border-muted');
+    jsBackground.classList.add('bg-dark', 'border-secondary');
+    headshotText.classList.remove('title-text');
     headshotText.classList.add('text-white');
     // change footer nav styles
     footerNav.classList.remove('bg-light', 'border-muted');
@@ -126,7 +125,7 @@ darkTheme.addEventListener('click', () => {
         h3[i].classList.add('text-light');
     }
     // change lead paragraph styles
-    leadParagraph.classList.remove('text-body', 'background-alt');
+    leadParagraph.classList.remove('text-body', 'border-muted', 'bg-light');
     leadParagraph.classList.add('text-light', 'bg-dark', 'border-secondary');
     const leadLink = document.querySelector('.text-primary');
     leadLink.classList.remove('text-primary');
@@ -197,13 +196,13 @@ lightTheme.addEventListener('click', () => {
     body.classList.remove('body-background');
     body.classList.add('bg-white');
     // change nav styles
-    nav.classList.remove('navbar-dark', 'nav-dark', 'border-secondary');
-    nav.classList.add('navbar-light', 'bg-light', 'border-muted');
+    nav.classList.remove('nav-dark', 'border-bottom', 'border-secondary');
+    nav.classList.add('darker-bg');
     // change jumbotron styles
-    jsBackground.classList.remove('bg-dark');
-    jsBackground.classList.add('darker-bg');
-    headshotText.classList.add('text-body');
+    jsBackground.classList.remove('bg-dark', 'border-secondary');
+    jsBackground.classList.add('bg-light', 'border-muted');
     headshotText.classList.remove('text-white');
+    headshotText.classList.add('title-text');
     // change footer nav styles
     footerNav.classList.remove('nav-dark', 'border-secondary');
     footerNav.classList.add('bg-light', 'border-muted');
@@ -221,7 +220,7 @@ lightTheme.addEventListener('click', () => {
     }
     // change lead paragraph styles
     leadParagraph.classList.remove('text-light', 'bg-dark', 'border-secondary');
-    leadParagraph.classList.add('text-body', 'background-alt', 'border-muted');
+    leadParagraph.classList.add('text-body', 'border-muted');
     const leadLink = document.querySelector('a[href="https://teamtreehouse.com"]');
     leadLink.classList.add('text-primary');
     leadLink.classList.remove('text-success');
@@ -264,7 +263,7 @@ lightTheme.addEventListener('click', () => {
     quoteName.classList.remove('text-warning');
     quoteName.classList.add('text-muted');
     quoteBody.classList.remove('bg-dark', 'border-secondary');
-    quoteBody.classList.add('background-alt', 'border-muted');
+    quoteBody.classList.add('border-muted');
     // address buggy behavior with radio buttons 
     lightTheme.parentNode.classList.remove('text-body');
     lightTheme.parentNode.classList.add('text-light');
@@ -286,23 +285,6 @@ lightTheme.addEventListener('click', () => {
     // change dropdown menu background
     dropDown.style.backgroundColor = '#FFF';
 });
-
-// listen for screen adjustment for h3 border and before/after
-// const mediaQuery = window.matchMedia('(max-width: 600px)');
-
-// function screenTest(e) {
-//   if (e.matches) {
-//     /* the viewport is 600 pixels wide or less */
-//     para.textContent = 'This is a narrow screen — less than 600px wide.';
-//     document.body.style.backgroundColor = 'red';
-//   } else {
-//     /* the viewport is more than than 600 pixels wide */
-//     para.textContent = 'This is a wide screen — more than 600px wide.';
-//     document.body.style.backgroundColor = 'blue';
-//   }
-// }
-// screenTest(mql);
-// mql.addEventListener('change', screenTest);
 
   
   

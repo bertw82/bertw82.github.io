@@ -1,12 +1,28 @@
 /* base styles */
 
 .darker-bg {
-    background-color: #E9ECEF;
+    background-color: #343a40;
 }
+
+.title-text {
+    color: #343a40;
+}
+
+/* .border-danger {
+    border-color: #ADB5BD!important;
+} */
+
+/* .nav-link{
+    color: #6c757d!important;
+}
+
+.nav-link.active {
+    color: #343a40!important;
+  } */
 
 .nav-dark {
     background-color: #212529;
-}
+} 
 
 .line {
     display:inline-block;
