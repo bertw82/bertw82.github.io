@@ -285,7 +285,3 @@ lightTheme.addEventListener('click', () => {
     // change dropdown menu background
     dropDown.style.backgroundColor = '#FFF';
 });
-
-  
-  
-  
