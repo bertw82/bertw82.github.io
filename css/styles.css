@@ -23,13 +23,13 @@
     background-color: #212529;
 } 
 
-.line {
+/* .line {
     display:inline-block;
     position: relative;
     transition: opacity 2s;
     opacity: 0;
     margin-top: 4px;
-}
+} */
 
 /* Header styles */
 
@@ -204,7 +204,7 @@ blockquote:after {
     small {
         font-size: 100%!important;
     }
-    .line-1:before,
+    /* .line-1:before,
     .line-1:after {
         content: "";
         position: absolute;
@@ -237,7 +237,7 @@ blockquote:after {
         margin-left: 15px;
     }
     /* dark theme styles */
-    .line-3:before,
+    /* .line-3:before,
     .line-3:after {
         content: "";
         position: absolute;
@@ -268,6 +268,6 @@ blockquote:after {
     }
     .line-4:after {
         margin-left: 15px;
-    }
+    } */
 }
   
