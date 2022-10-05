@@ -7,532 +7,77 @@
 
     <!-- Bootstrap CSS -->
     <link rel="preload" href="images/rsz_bert-witzel.jpg" as="image">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/styles2.css" rel="stylesheet">
     <title>Bert Witzel | Web Developer</title>
     <script src="https://kit.fontawesome.com/08b19d1da2.js" crossorigin="anonymous"></script>
   </head>
-  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100" class="bg-white">
+  <body class="bg-light">
     <!-- overflow div -->
-    <div class="overflow-hidden">
-    <header>
-        <!-- nav bar -->
-        <nav id="nav" class="navbar navbar-expand-lg navbar-dark darker-bg fixed-top">
-          <div class="container">
-        
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link nav-text" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text" href="#about">About</a>
-                </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li> -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Portfolio
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#portfolioFewd">Front End Projects</a>
-                    <a class="dropdown-item" href="#portfolioJs">Full Stack JavaScript Projects</a>
-                    <a class="dropdown-item" href="#freelance">Freelance Projects</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text" href="#contact" >Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- /nav bar -->
+    <div class="container">
 
-        <!-- landing page -->
-        <div class="bg-light js-background border-bottom border-muted">
-          <div class="container head-contain">
-            <div class="headshot"></div>
-          </div>
-          <div class="container title-text container-title py-2">
-            <h1 class="display-4">Bert Witzel</h1>
-            <p class="lead">Freelance Web Developer</p>
-          </div>
+    <div class="row my-4 my-md-5">
+      <!-- picture and about -->
+      <div class="col-lg-8">
+        <div >
+          <img src="images/rsz_bert-witzel.jpg" alt="Picture of Bert Witzel">
+          <h1 class="mt-3">Bert Witzel | Web Developer</h1>
         </div>
-        <!-- /landing page -->
-      </header>
-  
-      <main>
-        <!-- radio buttons for light and dark theme -->
-        <div class="container text-center mt-5">
-          <div class="btn-group btn-group-toggle text-center" data-toggle="buttons">
-            <label class="btn btn-outline-secondary">
-              <input type="radio" name="options" id="lightTheme" checked> Light Mode
-            </label>
-            <label class="btn btn-outline-secondary">
-              <input type="radio" name="options" id="darkTheme"> Dark Mode
-            </label>
-          </div>
-        </div>
-        
-        <!-- About section -->
-        <div class="container" id="about">
-          <h2 class="text-center display-4 text-muted my-5 fadeTitle fadeOut">About</h2>  
-          <p class="p-about text-body lead mt-4 mt-lg-0 bg-light border border-muted p-3 p-md-4">
-            Hello!<br><br>
-            My name is Bert and I am a freelance Front End and Full Stack JavaScript web developer who loves to create fantastic websites for my clients. As a graduate of <a href="https://teamtreehouse.com" class="text-primary" style="text-decoration: none;" target="_blank">Treehouse</a>, I am well-versed in HTML, CSS, Sass, JavaScript, Node.js, Pug, Sequelize, and React. I use all of these technologies to create attractive and functional websites.<br><br>
-            I look forward to working with you to fulfill your website needs!
-          </p>
-        </div>
-        <!-- /About section -->
-  
-        <!-- Portfolio section -->
+      </div>
+
+      <!-- projects -->
+      <div class="col-lg-4">
+        <h4 class="text-muted">Skills:</h4>
+        <p> HTML, CSS, SASS, JavaScript, Node, Express, React, PHP, SQL, Wordpress</p>
+        <h4 class="text-muted">Education:</h4>
+        <p><a href="https://teamtreehouse.com" target="_blank">Treehouse</a> | <a href="https://www.udemy.com/" target="_blank">Udemy</a></p>
+        <h4 class="text-muted">Projects:</h4>
+        <p>React: <a href="https://sf-photo-app-f570b9.netlify.app/" target="_blank">Photo Gallery</a></p>
+        <p>Front End; <a href="https://bertw82.github.io/techdegree-project-7/" target="_blank">Dashboard App</a></p>
+        <p>Back End: <a href="https://side-project-portfolio.herokuapp.com/" target="_blank">Side Project Portfolio</a></p>
+        <p>Bootstrap: <a href="https://bass-scales.com" target="_blank">Book Website</a></p>
+        <p>Wordpress: <a href="https://happybrainlifecoach.com" target="_blank">Life Coach Website</a></p>
+        <p>Wix: <a href="https://kidsconcertadventures.com" target="_blank">Children's Concerts Website</a></p>
+        <p>PHP: <a href="https://bertwitzelcode.com/cms/" target="_blank">Content Management System</a></p>
+        <h4 class="text-muted">Contact:</h4>
+        <p><a href="mailto:bwitzel82@gmail.com" target="_blank">Email Me</a></p>
+
+      </div>
+
+    </div>
+  </div>
+    <footer>
+      <!-- footer nav -->
+      <nav id="footerNav" class="navbar navbar-light bg-light border-top border-muted">
         <div class="container">
-          <h2 class="text-center display-4 text-muted my-5 fadeTitle fadeOut" id="portfolio">Portfolio</h2>
-          <!-- Front End Projects -->
-          <div class="text-center pb-4">
-            <div class="h3-border h3-dark mb-5 fadeTitle fadeOut">
-              <h3 class="text-black-50 text-center fadeTitle fadeOut line line-1" id="portfolioFewd">Front End Projects</h3>
-            </div>           
-          </div>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/dashboard-app.jpg" alt="dashboard app project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Dashboard App</h5>
-                  <p class="card-text mb-5">Responsive webpage featuring svgs, charts, keyframes animation and local storage. Layout with CSS grid. Search for a user name in the Message section.</p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/sass.svg" alt="sass emblem svg">
-                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/techdegree-project-7/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/techdegree-project-7" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/employee-directory.jpg" alt="employee directory API project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column ">
-                  <h5 class="card-title">API Employee Directory</h5>
-                  <p class="card-text mb-5">Responsive, interactive Employee Directory using Fetch API. Click on an employee and modal window opens. Navigate between employees in modal window. Search for employees by name.</p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/sass.svg" alt="sass emblem svg">
-                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/techdegree-project-8/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/techdegree-project-8" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/bass-scales.jpg" alt="scale book project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Book Website</h5>
-                  <p class="card-text mb-5">Personal website for a double bass scale book that I self-published. Built with Bootstrap and featuring a lightbox photo gallery and other personal touches.
-                  </p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/css.svg" alt="css emblem svg">
-                    <img  class="tech-svg" src="images/svg/bootstrap.svg" alt="Bootstrap icon"> 
-                  </div> 
-                  <a href="https://bass-scales.com" class="btn-project btn btn-primary mt-5" target="_blank">View Project</a>
-                </div>
-              </div>
-            </div> -->
-
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/calculator.jpg" alt="calculator project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Calculator</h5>
-                  <p class="card-text mb-5">Calculator with basic functionality created with JavaScript, and three color themes.</p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/sass.svg" alt="sass emblem svg">
-                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/calculator-app/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/calculator-app" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/city-website.jpg" alt="city website project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Tourism Website</h5>
-                  <p class="card-text mb-5">Multi-page responsive website featuring a lightbox photo gallery, CSS accordion menu, HTML table and original images.</p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/sass.svg" alt="sass emblem svg">
-                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/city-website/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/city-website" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/featherlite-app.jpg" alt="featherlite app project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">FeatherLITE App</h5>
-                  <p class="card-text mb-5">Interactive note-taking app for mobile and tablet screen sizes. Notes can be created and deleted.</p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/sass.svg" alt="sass emblem svg">
-                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/FeatherLITE-app/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/FeatherLITE-app" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div>
-            
-            <!-- <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/wheel-of-success.jpg" alt="wheel of success project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Symphonic Wheel of Success Game</h5>
-                  <p class="card-text mb-5">Word-guessing game where user chooses letters on a keyboard to guess the phrase. JavaScript used for game functionality. 
-                  </p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/css.svg" alt="css emblem svg">
-                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/techdegree-project-6/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/techdegree-project-6" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div> -->
-            <!-- 
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/countdown-timer.jpg" alt="form project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Countdown Timer</h5>
-                  <p class="card-text mb-5">Frontend Mentor project for tablet and mobile screen sizes featuring a countdown timer.
-                  </p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/sass.svg" alt="sass emblem svg">
-                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/countdown-timer/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/countdown-timer" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- <div class="col mb-4 d-none d-md-block ">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/portfolio-project.jpg" alt="portfolio project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Portfolio Website</h5>
-                  <p class="card-text mb-5">Responsive float-based layout portfolio website viewable in screens sized 320px, 768px, and 1024px. 
-                  </p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/css.svg" alt="css emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/Techdegree-project-2/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/Techdegree-project-2" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- <div class="col mb-4 d-none d-md-block ">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/form.jpg" alt="form project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Form</h5>
-                  <p class="card-text mb-5">Styled form for tablet and mobile screen sizes using all form inputs common to internet forms. 
-                  </p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/css.svg" alt="css emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/Techdegree-project-3/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/Techdegree-project-3" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div> -->
-          </div>
-
-          <!-- Full Stack Projects -->
-          <div class="text-center pb-4">
-            <div class="h3-border h3-dark my-5 fadeTitle fadeOut">
-              <h3 class="text-black-50 text-center fadeTitle fadeOut line line-2" id="portfolioJs">Full Stack JavaScript Projects</h3>
-            </div>
-          </div>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/sf-photo-app.jpg" alt="react photo gallery project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">React Photo Gallery</h5>
-                  <p class="card-text mb-5">Paginated photo gallery (plus a video on the home page) built with React utilizing the Flickr API for images from a recent trip to San Francisco.</p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/react.svg" alt="react logo svg">
-                  </div> 
-                  <a href="https://sf-photo-app-f570b9.netlify.app/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/sf-photo-app" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/side-projects.jpg" alt="side project portfolio">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Side Project Portfolio</h5>
-                  <p class="card-text mb-5">A portfolio of coding side projects created with Node.js, Express, Pug, and deployed on Heroku.</p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/node.svg" alt="node.js svg">
-                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
-                  </div> 
-                  <a href="https://side-project-portfolio.herokuapp.com/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/node.js-express-portfolio" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/interactive-form.jpg" alt="interactive form project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Interactive Form</h5>
-                  <p class="card-text mb-5">Form for a fictional Full Stack Conference. JavaScript and Regular Expressions used in form functionality.</p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/interactive-form/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/interactive-form" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/phrase-hunter.jpg" alt="phrase hunter game project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Phrase Hunter</h5>
-                  <p class="card-text mb-5">Interactive game created with Object Oriented JavaScript.</p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <div class="animate">Animate.css</div>
-                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/oop-game-show-app/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/oop-game-show-app" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/randomquote.jpg" alt="random quote generator project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Random Quote Generator</h5>
-                  <p class="card-text mb-5">Random quotes and background colors are generated with JavaScript functionality in this app. </p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/css.svg" alt="css emblem svg">
-                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/random-quote-generator/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/random-quote-generator" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/pagination.jpg" alt="data pagination project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Data Pagination and Filtering</h5>
-                  <p class="card-text mb-5">Pagination functionality and search filter functionality was created using JavaScript in this project.</p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/css.svg" alt="css emblem svg">
-                    <img class="tech-svg" src="images/svg/js.svg" alt="javascript emblem svg">
-                  </div> 
-                  <a href="https://bertw82.github.io/data-pagination-and-filtering/" class="btn-project btn btn-primary" target="_blank">View Project</a>
-                  <a href="https://github.com/bertw82/data-pagination-and-filtering" class="btn-code btn btn-success mt-2" target="_blank">View Code</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="text-center pb-4">
-            <div class="h3-border h3-dark my-5 fadeTitle fadeOut">
-              <h3 class="text-black-50 text-center fadeTitle fadeOut line line-2" id="freelance">Freelance Projects</h3>
-            </div>
-          </div>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/bass-scales.jpg" alt="scale book project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Scale Book Website</h5>
-                  <p class="card-text mb-5">Personal website for a double bass scale book that I self-published. Built with Bootstrap and featuring a lightbox photo gallery and other personal touches.
-                  </p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img class="tech-svg" src="images/svg/html.svg" alt="html emblem svg">
-                    <img class="tech-svg" src="images/svg/css.svg" alt="css emblem svg">
-                    <img  class="tech-svg" src="images/svg/bootstrap.svg" alt="Bootstrap icon"> 
-                  </div> 
-                  <a href="https://bass-scales.com" class="btn-project btn btn-primary mt-5" target="_blank">View Project</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card bg-light h-100 mx-auto border-muted">
-                <div class="img-portfolio overflow-auto">
-                  <img class="w-100" src="images/portfolio/concert_adventures.jpg" alt="scale book project">
-                </div>
-                <div class="card-body border-top border-muted d-flex flex-column">
-                  <h5 class="card-title">Kids Concert Adventures</h5>
-                  <p class="card-text mb-5">Website for an orchestra colleague who produces concerts introducing instruments and classical music to children.
-                  </p>
-                  <div class="d-flex justify-content-around mt-auto mb-4">
-                    <img  class="tech-svg" src="images/svg/wix.svg" alt="Wix icon"> 
-                  </div> 
-                  <a href="https://kidsconcertadventures.com" class="btn-project btn btn-primary mt-5" target="_blank">View Project</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
+          <div>
+          <a class="navbar-brand" target="_blank" href="https://www.linkedin.com/in/bert-witzel-831b021b0/">
+            <img class="social-image" src="images/svg/linkedin.svg"  alt="LinkedIn icon">
+          </a>
+          <a class="navbar-brand" target="_blank" href="https://github.com/bertw82">
+            <img class="social-image" src="images/svg/github.svg" alt="GitHub icon">
+          </a>
+          <a class="navbar-brand" target="_blank" href="https://codepen.io/Bertw">
+            <img class="social-image" src="images/svg/codepen.svg" alt="Codepen icon">
+          </a>
+          <a class="navbar-brand" target="_blank" href="https://stackoverflow.com/users/15268032/bert-w">
+            <img class="social-image" src="images/svg/stack.svg" alt="StackOverflow icon">
+          </a>
         </div>
-        <!-- /Portfolio section -->
-  
-        <!-- Contact section -->
-        <div class="container mb-5" id="contact">
-          <h2 class="text-center display-4 text-muted mb-5 mt-4 fadeTitle fadeOut">Contact</h2>
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <form class="form-border border-info bg-light p-4" name="contact-form" data-netlify="true" method="POST"> 
-                <div class="form-group">
-                  <label class="text-body" for="name">Name</label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                </div>
-                <div class="form-group">
-                  <label  class="text-body" for="email">Email address</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
-                </div>
-                <div class="form-group">
-                  <label  class="text-body" for="phone">Phone</label>
-                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="###-###-####">
-                </div>
-                <div class="form-group">
-                  <label class="text-body" for="comments">Comments</label>
-                  <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
-                </div>
-                <button id="form-button" type="submit" class="btn btn-info">Submit</button>
-              </form>
-            </div>
+          <div class="ml-auto text-md-right text-dark">
+            <small>&copy; 2022 Bert Witzel</small>
           </div>
         </div>
-        <!-- /Contact section -->
-      
-        <!-- Quote section -->
-        <div class="row">
-          <div class="my-5 col-md-10 col-lg-8 mx-md-auto bg-light border border-muted pt-3 js-quote quote">
-            <div class="card-body">
-              <blockquote class="blockquote text-dark text-center mb-0 pl-2 pr-2">
-                <p>To me programming is more than an important practical art. It is also a gigantic undertaking in the foundations of knowledge.</p>
-              </blockquote>
-              <footer class="blockquote-footer footer text-muted text-center">Grace Hopper</footer>
-            </div>
-          </div>
-        </div>
-        <!-- /Quote section -->
-      </main>
-      
-      <footer>
-        <!-- footer nav -->
-        <nav id="footerNav" class="navbar navbar-light bg-light border-top border-muted">
-          <div class="container">
-            <a class="navbar-brand" target="_blank" href="https://www.linkedin.com/in/bert-witzel-831b021b0/">
-              <img class="social-image" src="images/svg/linkedin.svg"  alt="LinkedIn icon">
-            </a>
-            <a class="navbar-brand" target="_blank" href="https://github.com/bertw82">
-              <img class="social-image" src="images/svg/github.svg" alt="GitHub icon">
-            </a>
-            <a class="navbar-brand" target="_blank" href="https://codepen.io/Bertw">
-              <img class="social-image" src="images/svg/codepen.svg" alt="Codepen icon">
-            </a>
-            <!-- <a style="cursor: pointer;" tabindex="0" role="button" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="This website built with Bootstrap">
-              <img class="social-image" src="images/svg/bootstrap.svg" alt="Bootstrap icon">
-            </a> -->
-            <div class="ml-auto text-md-right text-dark">
-              <small>&copy; 2021 Bert Witzel</small>
-            </div>
-          </div>
-        </nav>
-        <!-- /footer nav -->
-      </footer>
+      </nav>
+      <!-- /footer nav -->
+    </footer>
 
     <!-- /overflow div -->
-    </div>
+    
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>

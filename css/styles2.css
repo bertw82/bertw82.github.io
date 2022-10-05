@@ -1,0 +1,36 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  width: 100%
+}
+.social-image {
+  width: 40px;
+  transition: transform .5s;
+}
+.social-image:hover {
+  transform: scale(1.2);
+}
+
+.img-portfolio {
+  height: 13rem;
+  padding: .3125em;
+}
+
+.tech-svg {
+  height: 50px;
+  width: 50px;
+}
+
+.arrow {
+  width: 40px;
+}
+
+.mode-svg {
+  width: 40px;
+}
+
+#footerNav {
+  height: 100px;
+}
