@@ -1,6 +1,30 @@
 * {
   font-family: 'Roboto', sans-serif;
 }
+body,footer{
+  background-color: #EDF2F4;
+}
+/* footer{
+  background-color: #8D99AE;
+} */
+
+h1{
+  color: #2B2D42!important;
+}
+.text-secondary{
+  color: #508991!important;
+}
+/* .border-muted{
+  background-color: #40798C!important;
+
+} */
+
+a {
+  color: #EF233C;
+}
+a:hover{
+  color: #D90429;
+}
 
 img {
   width: 100%
@@ -32,5 +56,5 @@ img {
 }
 
 #footerNav {
-  height: 100px;
+  min-height: 100px;
 }
