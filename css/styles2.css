@@ -1,6 +1,9 @@
 * {
   font-family: 'Roboto', sans-serif;
 }
+/* body{
+  height: 100vh;
+} */
 body,footer{
   background-color: #EDF2F4;
 }
@@ -56,5 +59,11 @@ img {
 }
 
 #footerNav {
-  min-height: 100px;
+  height: 120px;
+}
+
+@media (min-width: 992px){
+  #footerNav {
+    height: 80px;
+  }
 }
